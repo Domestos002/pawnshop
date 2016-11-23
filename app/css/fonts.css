@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "base-font";
+  src: url("../fonts/base-font.eot");
+  src: url("../fonts/base-font.eot?#iefix") format("embedded-opentype"), url("../fonts/base-font.woff") format("woff"), url("../fonts/base-font.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "fontello";
+  src: url("../fonts/fontello.eot");
+  src: url("../fonts/fontello.eot?#iefix") format("embedded-opentype"), url("../fonts/fontello.woff") format("woff"), url("../fonts/fontello.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

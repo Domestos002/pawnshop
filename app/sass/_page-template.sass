@@ -1,0 +1,290 @@
+@import _imports.sass
+
+//________________________________reset____________________________________
+.form-control
+    height: 100%
+
+.input-group-addon, .input-group-btn
+    width: 0
+
+.thumbnail
+    border: none
+
+.btn.dropdown-toggle
+    line-height: 0
+    padding: 10px 0
+
+.navbar-collapse
+    padding: 0
+
+//____________________________________________________________________
+
+/*-------------------------------------*/
+// icons
+
+[class*='icon-']
+    font-family: $font-icon
+    font-style: normal
+    font-weight: normal
+    font-variant: normal
+    text-transform: none
+    line-height: 1em
+    font-size: 14px
+    speak: none
+    display: inline-block
+
+//__________________________________________text_____________________
+
+.color-brand-1
+    color: $color-brand-1
+
+.color-brand-2
+    color: $color-brand-2
+
+.ff-base
+    font-family: $font-base
+
+.ff-sub
+    font-family: $font-second
+
+.text-blue
+    color: $blue
+
+.text-white
+    color: #fff
+
+.text-green
+    color: $green
+
+.fz28
+    font-size: 28px
+
+.fz20
+    font-size: 20px
+
+.fz25
+    font-size: 25px
+
+.fz18
+    font-size: 18px
+
+.fz15
+    font-size: 15px
+
+.fz12
+    font-size: 12px
+
+.fz80
+    font-size: 80px
+
+.lh18
+    line-height: em(18px, 17px)
+
+.lh20
+    line-height: em(20px, 17px)
+
+.lh34
+    line-height: em(34px, 17px)
+
+.lh30
+    line-height: em(30px, 17px)
+
+.lh36
+    line-height: em(36px, 17px)
+
+.lh14
+    line-height: em(14px, 17px)
+
+.lh24
+    line-height: em(24px, 17px)
+
+.lh28
+    line-height: em(24px, 17px)
+
+.lh-normal
+    line-height: 1.2em
+
+.f-light
+    font-weight: $font-light
+
+.f-normal
+    font-weight: $font-normal
+
+.f-bold
+    font-weight: $font-bold
+
+//__________________________________________text_____________________
+
+.no-gutter > [class*='col-']
+    padding-right: 0
+    padding-left: 0
+    +clearfix()
+
+
+.overlay
+    position: relative
+    &:hover
+        &:before
+            z-index: 400
+            position: absolute
+            top: 0
+            right: 0
+            width: 100%
+            height: 100%
+            background: rgba(0, 0, 0, 0.3)
+            content: ''
+
+.scale-on-hover
+    &:hover
+        transform: scale(1.05)
+        +trans()
+
+.img-responsive
+    //min-width: 100%
+    max-width: 100%
+    height: auto
+
+.fluid
+    width: 100%
+    height: auto
+
+.fluid-width
+    width: 100%
+
+.fluid-height
+    height: 100%
+
+
+
+.clearfix
+    +clearfix()
+
+.carousel-chevron-left
+    +arr(10px, 2px, l, #fff)
+    position: relative
+    right: -2px
+
+.carousel-chevron-right
+    +arr(10px, 2px, r, #fff)
+    position: relative
+    left: -2px
+
+
+//______________________________fonts___________________________________
+*:not(.tdu)
+    text-decoration: none !important
+
+h1, h2, h3, h4 , h5
+    font-family: $font-second
+    font-weight: 700
+    line-height: normal
+    &.no-ttu
+        text-transform: none
+    &.font-normal
+        font-weight: 400
+
+//____________________________________________________________________
+
+.page-header__navbar-link
+    font-family: $font-base
+    font-size: 18px
+
+.owl-nav
+    & .owl-prev, .owl-next
+        display: none
+
+/*-------------------------------------*/
+// buttons
+
+.btn
+    text-shadow: 2.1px 2.1px 3px rgba(0, 0, 0, 0.8)
+    font-family: $font-base
+    padding-left: 55px
+    padding-right: 55px
+    line-height: 25px
+    border-radius: 10px
+
+
+
+.btn-green
+    background: linear-gradient(to bottom, #31c100, #258d02)
+    border: 3px solid #268d03
+    color: #fff
+    &:hover
+        background: linear-gradient(to bottom, #31c100 * 0.8, #258d02 * 0.8)
+        color: #fff
+
+.blue-btn
+    background: linear-gradient(to bottom, #2a2afc, #00028a)
+    border: 3px solid #04107c
+    color: #fff
+    &:hover
+        background: linear-gradient(to bottom, #2a2afc * 0.8, #00028a * 0.8)
+        color: #fff !important
+
+.yellow-btn
+    background: linear-gradient(to bottom, #ff0, #bb780b)
+    border: 3px solid #fff
+    color: #fff
+    &:hover
+        background: linear-gradient(to bottom, #ff0 * 0.8, #bb780b * 0.8)
+        color: #fff
+
+
+.page-content__b-reviews__slider-list, .advantages-slider-list
+    .owl-nav
+        & .owl-prev, .owl-next
+            width: 85px
+            font-size: 0
+            line-height: 0
+            background-color: transparent
+            @extend .fx-center
+            &:hover
+                background-color: #efefef
+                +trans()
+        & .owl-prev
+            +position(absolute, 0 none 0 0)
+            &:before
+                margin-left: 30px
+                +arr(60px, 4px, l, #909090)
+        & .owl-next
+            +position(absolute, 0 0 0 none)
+            &:before
+                margin-right: 30px
+                +arr(60px, 4px, r, #909090)
+
+//__________________________slider______________________________________
+.slider-handle.round
+    background-color: #fff
+    border: 5px solid $green
+    border-radius: 50%
+    width: 22px
+    height: 22px
+
+.slider-selection
+    background-color: $green
+    background-image: none
+
+.slider-horizontal .slider-handle-container, .slider-horizontal .slider-track
+    height: 6px
+
+.slider-horizontal .slider-handle
+    margin-top: -7px
+
+.slider.slider-horizontal
+    width: 100% !important
+
+[class*='slider-val-']
+    font-size: 11px
+    line-height: em(13px, 17px)
+    font-family: $font-base
+    color: $grey
+
+.slider-block
+    &:not(:last-child)
+        margin-bottom: 20px
+
+.slider.slider-horizontal
+    margin-bottom: 15px
+
+//__________________________slider______________________________________E

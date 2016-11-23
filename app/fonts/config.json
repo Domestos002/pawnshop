@@ -1,0 +1,154 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "e5fdc4247f1f9b3bf98d20a954e1327c",
+      "css": "user-male",
+      "code": 61538,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "a6c0e3fce2fbe9ccf9b1c54c8f399106",
+      "css": "user-female",
+      "code": 61539,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "ede2ea0a583f662b79fbb181b428c20d",
+      "css": "building-filled",
+      "code": 61869,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "b99d736cef489a3150ba8aac7c4e8403",
+      "css": "clock",
+      "code": 59392,
+      "src": "iconic"
+    },
+    {
+      "uid": "5854855e963044f93b15738a5bb27a29",
+      "css": "phone",
+      "code": 59393,
+      "src": "entypo"
+    },
+    {
+      "uid": "c91098f07ff0df45b3f8666b72b75801",
+      "css": "phone-1",
+      "code": 59394,
+      "src": "elusive"
+    },
+    {
+      "uid": "7b6c617d6d1e3f22db493839f0483bf6",
+      "css": "edit",
+      "code": 59395,
+      "src": "elusive"
+    },
+    {
+      "uid": "85ef733b1e280809e8443f5f0167b5c2",
+      "css": "doc",
+      "code": 59396,
+      "src": "typicons"
+    },
+    {
+      "uid": "t6cy82vd3t5piy0j3uknrlrzpg1ld8y3",
+      "css": "search",
+      "code": 59397,
+      "src": "typicons"
+    },
+    {
+      "uid": "d58dc0a0927a7dea2992f615f2fbf400",
+      "css": "wallet",
+      "code": 59398,
+      "src": "linecons"
+    },
+    {
+      "uid": "0817b47d6e5f1d85f2428640a021f0c4",
+      "css": "star",
+      "code": 59399,
+      "src": "linecons"
+    },
+    {
+      "uid": "cb8b402e2efdc57d6d37ad7d3da819fe",
+      "css": "stopwatch",
+      "code": 59400,
+      "src": "typicons"
+    },
+    {
+      "uid": "06a2fbb04dffecdb444936073cae9123",
+      "css": "thumbs-up",
+      "code": 59401,
+      "src": "linecons"
+    },
+    {
+      "uid": "44a0e2660ac966cdfaa04deb6aac51df",
+      "css": "shield",
+      "code": 61746,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "bc6ef9c6531c54e927e9dc18e45524b2",
+      "css": "warehouse",
+      "code": 59456,
+      "src": "maki"
+    },
+    {
+      "uid": "fc455b9530e0b37facc289f42a120fdd",
+      "css": "commerical-building",
+      "code": 59409,
+      "src": "maki"
+    },
+    {
+      "uid": "1be0ad37c941fcc88233d38c2e460cf5",
+      "css": "search-outline",
+      "code": 59402,
+      "src": "typicons"
+    },
+    {
+      "uid": "2c452255d4fed51ef0a6ef86436a7d08",
+      "css": "percent",
+      "code": 62101,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "4c1ef492f1d2c39a2250ae457cee2a6e",
+      "css": "instagram",
+      "code": 61805,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "f3d95e13eb43f3f6b8efe1eb424a1e3b",
+      "css": "vkontakte",
+      "code": 61833,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "229e50061df526f24f1ae884fab52101",
+      "css": "odnoklassniki",
+      "code": 62220,
+      "src": "brandico"
+    },
+    {
+      "uid": "6db15bda083b09a04bd27dcc1d00744d",
+      "css": "at",
+      "code": 59403,
+      "src": "iconic"
+    },
+    {
+      "uid": "6cc7af3e5b55720bcb6ef68372ce24be",
+      "css": "facebook-official",
+      "code": 62000,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "53d4dc777eeba379412efba3ee1cac9e",
+      "css": "facebook",
+      "code": 61522,
+      "src": "mfglabs"
+    }
+  ]
+}

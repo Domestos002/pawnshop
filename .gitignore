@@ -1,0 +1,11 @@
+.idea
+/index2.html
+/.sass-cache/
+/.materials/
+.temp_twig_html
+*.rar
+*.html
+app/.sass-cache
+node_modules
+app/bower_components
+/dist
