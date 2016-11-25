@@ -81,13 +81,44 @@
 
         });
 
+        $(document).on("click", '.sliding-panel-link', function (e) {
+            $('.sliding-panel').removeClass('active');
+            $('body').removeClass('ovh');
+            e.preventDefault();
+        });
 
-        slider.slider({
-            tooltip: 'always'
+        $(document).on("click", '.navbar-toggle', function (e) {
+            $('.sliding-panel').addClass('active');
+            $('body').addClass('ovh');
+            e.preventDefault();
+        });
+
+        $(document).on("click", '.sliding-panel__close', function (e) {
+            $('.sliding-panel').toggleClass('active');
+            $('body').removeClass('ovh');
+            e.preventDefault();
         });
 
         initMap();
 
+    });
+    $(function () {
+        $('a.js-scrollScreen[href*="#"]:not([href="#"])').click(function () {
+            if ($(this).hasClass('sliding-panel-link')) {
+                $('body').removeClass('ovh');
+                $('.sliding-panel').removeClass('active');
+            }
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[id=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
     });
 })();
 

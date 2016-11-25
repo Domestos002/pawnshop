@@ -1,8 +1,8 @@
 @import _imports.sass
 
-
 @media (max-width: $screen-lg - 1px)
-
+    .navbar
+        min-height: initial
     .page-header__navbar
         order: 3
 
@@ -152,6 +152,25 @@
 @media (max-width: $screen-sm - 1px)
     //.first-screen__notebook-img__text
         font-size: 2.2vw
+    .page-header__navbar
+        order: 0
+
+    .page-header__navbar
+        text-align: center
+
+    .page-header
+        & .navbar-toggle
+            background-color: transparent
+            border: none
+            & .icon-bar
+                width: 125px
+                height: 8px
+                border-radius: 20px
+            &:hover
+                background-color: transparent
+
+    .navbar-toggle
+        display: inline-block
 
     .page-header__row
         flex-direction: column
@@ -165,9 +184,6 @@
     .page-header__logo
         flex-basis: 100px
 
-    .page-header__navbar
-        width: 100%
-
     .fz-tablet-20
         font-size: 20px
 
@@ -179,8 +195,8 @@
                 height: 25px
                 font-size: 25px
                 left: 10px
-                //+position(absolute, 50% none none none)
-                //+transform(translate(calc(-100% - 20px), -50%))
+    //+position(absolute, 50% none none none)
+    //+transform(translate(calc(-100% - 20px), -50%))
 
     .page-content__b-get-consultation__form
         padding-left: 0
@@ -188,7 +204,6 @@
 
     .page-content__b-get-consultation
         background: $grey
-        
 
     .btn
         max-width: 100%
@@ -230,7 +245,6 @@
         &:not(:last-child)
             margin-bottom: 20px
 
-
     .first-screen__title
         & br
             display: none
@@ -240,7 +254,6 @@
 
     .first-screen__form__content__input-list
         +fluid-columns(1, 0, 0)
-
 
     .first-screen__form__content
         & .slider-block
@@ -315,7 +328,6 @@
             padding-top: 70px
             text-align: center
 
-
     .page-content__b-calculate__form__main
         & .input-block
             text-align: center
@@ -327,7 +339,7 @@
     .first-screen .container
         min-height: 350px
 
-    .page-content__section-title , .page-footer__b-title
+    .page-content__section-title, .page-footer__b-title
         font-size: 35px
 
     h1
@@ -363,13 +375,11 @@
         border-radius: 0
         border-bottom: 20px solid $green
 
-
     .advantages-slider-item
         margin: 0
 
     .first-screen__form-wrapper
         padding-bottom: 0
-
 
 @media (max-width: 377px)
     .b-advantages__adv-list-item-wrapper
