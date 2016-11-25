@@ -30,8 +30,11 @@ input
     box-shadow: none
     padding: 13px
     border: none
+    +phc($grey)
 a
     text-decoration: none
+    &:hover
+        color: $lightgrey
 
 body
     color: $black
@@ -201,7 +204,7 @@ body
             margin-left: 30px
 
 .page-content__b-services__icons-item
-    flex-basis: 245px
+    flex-basis: 250px
     flex-shrink: 1
     display: inline-block
     & .circle-icon-wrapper

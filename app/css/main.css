@@ -8431,9 +8431,28 @@ input {
   padding: 13px;
   border: none;
 }
+input::-webkit-input-placeholder {
+  color: #748187 !important;
+  opacity: 1 !important;
+}
+input::-moz-placeholder {
+  color: #748187 !important;
+  opacity: 1 !important;
+}
+input:-moz-placeholder {
+  color: #748187 !important;
+  opacity: 1 !important;
+}
+input:-ms-input-placeholder {
+  color: #748187 !important;
+  opacity: 1 !important;
+}
 
 a {
   text-decoration: none;
+}
+a:hover {
+  color: #666666;
 }
 
 body {
@@ -8682,7 +8701,7 @@ body {
 }
 
 .page-content__b-services__icons-item {
-  flex-basis: 245px;
+  flex-basis: 250px;
   flex-shrink: 1;
   display: inline-block;
 }
