@@ -14,8 +14,25 @@
     line-height: 0
     padding: 10px 0
 
-.navbar-collapse
-    padding: 0
+.page-header
+    & .navbar-collapse
+        padding: 0
+
+    & .navbar-collapse.in
+        overflow: visible
+
+    & .navbar-header
+        display: flex
+        justify-content: flex-end
+
+    & .navbar-toggle
+        position: relative
+        margin-right: 0
+
+    & .navbar-nav
+        margin: 0
+
+
 
 //____________________________________________________________________
 
@@ -43,6 +60,9 @@
 
 .ff-base
     font-family: $font-base
+
+.ff-base-bold
+    font-family: $font-base-bold
 
 .ff-sub
     font-family: $font-second
@@ -123,7 +143,6 @@
     padding-left: 0
     +clearfix()
 
-
 .overlay
     position: relative
     &:hover
@@ -157,8 +176,6 @@
 .fluid-height
     height: 100%
 
-
-
 .clearfix
     +clearfix()
 
@@ -172,12 +189,11 @@
     position: relative
     left: -2px
 
-
 //______________________________fonts___________________________________
 *:not(.tdu)
     text-decoration: none !important
 
-h1, h2, h3, h4 , h5
+h1, h2, h3, h4, h5
     font-family: $font-second
     font-weight: 700
     line-height: normal
@@ -207,8 +223,6 @@ h1, h2, h3, h4 , h5
     line-height: 25px
     border-radius: 10px
 
-
-
 .btn-green
     background: linear-gradient(to bottom, #31c100, #258d02)
     border: 3px solid #268d03
@@ -233,28 +247,26 @@ h1, h2, h3, h4 , h5
         background: linear-gradient(to bottom, #ff0 * 0.8, #bb780b * 0.8)
         color: #fff
 
-
-.page-content__b-reviews__slider-list, .advantages-slider-list
-    .owl-nav
-        & .owl-prev, .owl-next
-            width: 85px
-            font-size: 0
-            line-height: 0
-            background-color: transparent
-            @extend .fx-center
-            &:hover
-                background-color: #efefef
-                +trans()
-        & .owl-prev
-            +position(absolute, 0 none 0 0)
-            &:before
-                margin-left: 30px
-                +arr(60px, 4px, l, #909090)
-        & .owl-next
-            +position(absolute, 0 0 0 none)
-            &:before
-                margin-right: 30px
-                +arr(60px, 4px, r, #909090)
+.owl-nav
+    & .owl-prev, .owl-next
+        width: 85px
+        font-size: 0
+        line-height: 0
+        background-color: transparent
+        @extend .fx-center
+        &:hover
+            background-color: #efefef
+            +trans()
+    & .owl-prev
+        +position(absolute, 0 none 0 0)
+        &:before
+            margin-left: 30px
+            +arr(60px, 4px, l, #909090)
+    & .owl-next
+        +position(absolute, 0 0 0 none)
+        &:before
+            margin-right: 30px
+            +arr(60px, 4px, r, #909090)
 
 //__________________________slider______________________________________
 .slider-handle.round

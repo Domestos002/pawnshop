@@ -1,5 +1,389 @@
 @import _imports.sass
 
-@media (max-width: 1030px)
+
+@media (max-width: $screen-lg - 1px)
+
+    .page-header__navbar
+        order: 3
+
+    .page-header__logo
+        margin-right: 20px
+
+    .btn
+        max-width: 100%
+        width: 300px
+        padding: 6px 12px
+
+    .page-content__b-demands
+        & .square-wrapper
+            border: none
+            width: initial
+            height: initial
+
+    .fx-baseline-lg
+        display: flex
+        align-items: baseline
+
+    .first-screen__notebook-img
+        +position(absolute, initial none calc(0% - 50px) 11%)
+        width: 460px
+        height: 540px
+
+    .first-screen__title
+        text-align: center
+
+    .first-screen .container
+        min-height: 620px
+
+    .first-screen__car-img
+        +position(absolute, initial 11% calc(0% - 50px) initial)
+        width: 460px
+        height: 350px
+
+    .first-screen__form
+        position: static
+        border-radius: 21px
+        width: 70%
+        max-width: 100%
+        min-height: 106px
+        transform: translateY(0)
+
+    .first-screen__form__content
+        & .slider-list
+            display: flex
+            justify-content: space-between
+            & .slider-block
+                &:not(:last-child)
+                    margin-right: 10%
+
+    .first-screen__form__content__input-list
+        +fluid-columns(2, 30px, 0)
+        & .grid-wrapper
+            &:not(:last-child)
+                margin-bottom: 10px
+
+    .first-screen__form-wrapper
+        padding-top: 55px
+        padding-bottom: 45px
+
+@media (max-width: $screen-md - 1px)
+
+    .page-footer__b-contacts__content
+        flex-direction: column
+
+        & .circle-icon-wrapper[class*='to-']
+            left: 50%
+            +transform(translateX(-50%))
+
+    .page-footer__b-contacts__content-item
+        &:not(:last-child)
+            margin-bottom: 30px
+
+    .page-footer__b-contacts__content-item[class*='span']
+        width: 100%
+        text-align: center
+
+    .page-content__b-shipping__custom-row
+        flex-direction: column
+
+    .page-content__b-shipping__form
+        width: 100%
+        & .b-application-form-inner
+            & br
+                display: none
+
+    .page-content__b-calculate__form__inner
+        +make-row(0)
+        +clearfix()
+        & [class*='page-content__b-calculate__form__']
+            padding-bottom: 45px
+
+    .page-content__b-calculate__form__auto-inform
+        +make-md-column(12, 0)
+
+    .page-content__b-calculate__form__main
+        +make-md-column(12, 0)
+
+    .page-content__b-calculate__form__contact-inform
+        +make-md-column(12, 0)
+
+@media (max-width: $screen-md - 1px)
+    .page-content__b-get-consultation
+        min-height: initial
+        display: flex
+        justify-content: center
+        align-items: center
+
+    .page-content__b-get-consultation__form
+        max-width: 720px
+        min-height: initial
+        & .container
+            max-width: 100%
+            width: 720px
+
+    .page-content__b-services__icons-item
+        .circle-icon-wrapper
+            width: 100px
+            height: 100px
+            [class*='icon-']
+                line-height: 88px
+                color: #fff
+                font-size: 50px
+
+    .advantages-slider-list
+        & .owl-dots
+            +fluid-columns(4, 20px, 20px)
+            & .owl-dot
+                margin: 0
+                margin-bottom: 15px
+
+    .first-screen__notebook-img, .first-screen__car-img
+        width: 50%
+        height: auto
+
+    .first-screen__notebook-img
+        bottom: calc(0% - 10px)
+
+    .first-screen__notebook-img__text
+        font-size: 2.2vw
+        & p
+            font-size: 2.4vw
+
+@media (max-width: $screen-sm - 1px)
+    //.first-screen__notebook-img__text
+        font-size: 2.2vw
+
+    .page-header__row
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
     .page-header__phone
-        .fz-desktop
+        flex-basis: 80px
+        margin-right: 0
+
+    .page-header__logo
+        flex-basis: 100px
+
+    .page-header__navbar
+        width: 100%
+
+    .fz-tablet-20
+        font-size: 20px
+
+    .page-content__b-questions__accordeon
+        & .accordion-group
+            & .accordeon-item-number
+                line-height: 1.2em
+                width: 25px
+                height: 25px
+                font-size: 25px
+                left: 10px
+                //+position(absolute, 50% none none none)
+                //+transform(translate(calc(-100% - 20px), -50%))
+
+    .page-content__b-get-consultation__form
+        padding-left: 0
+        padding-right: 0
+
+    .page-content__b-get-consultation
+        background: $grey
+        
+
+    .btn
+        max-width: 100%
+        width: 260px
+        padding: 6px 12px
+        -webkit-box-sizing: border-box
+        -moz-box-sizing: border-box
+        box-sizing: border-box
+
+    .b-advantages__adv-list-item
+        & .icon-wrapper
+            width: 70px
+            height: 70px
+            [class*='icon-']
+                font-size: 40px
+
+    .b-application-form-wrapper
+        background-image: none
+        background-color: $grey
+
+    .b-application-form-wrapper
+        max-width: 100%
+        & .shell-w45
+            width: 100%
+
+    .fz-tablet-15
+        font-size: 15px
+
+    .fx-column-sm
+        display: flex
+        flex-direction: column
+
+    .fx-center-sm
+        display: flex
+        justify-content: center
+        align-items: center
+
+    .square-wrapper-outer
+        &:not(:last-child)
+            margin-bottom: 20px
+
+
+    .first-screen__title
+        & br
+            display: none
+
+    .page-content__section-title, .page-footer__b-title
+        font-size: 45px
+
+    .first-screen__form__content__input-list
+        +fluid-columns(1, 0, 0)
+
+
+    .first-screen__form__content
+        & .slider-block
+            width: 100%
+            margin-right: 0
+
+    .first-screen__form__content .slider-list
+        display: block
+
+    .advantages-slider-list
+        & .owl-dot
+            font-size: 28px
+            & span
+                width: 45px
+                height: 45px
+
+    h1
+        font-size: 35px
+    h2
+        font-size: 28px
+    h3
+        font-size: 25px
+    h4
+        font-size: 23px
+    h5
+        font-size: 18px
+
+    .first-screen .container
+        min-height: 520px
+
+    .first-screen__form__header
+        padding: 20px
+
+    .owl-nav
+        & .owl-prev, .owl-next
+            width: 60px
+        & .owl-next
+            &:before
+                margin-left: 10px
+                +arr(20px, 4px, r, #909090)
+        & .owl-prev
+            &:before
+                margin-right: 10px
+                +arr(20px, 4px, l, #909090)
+
+    .advantages-slider-item
+        margin-left: 65px
+        margin-right: 65px
+
+@media (max-width: 580px)
+    .first-screen .container
+        min-height: 435px
+
+@media (max-width: $screen-xs - 1px)
+    .fz-mobile-26
+        font-size: 26px
+
+    .fz-mobile-7vw
+        font-size: 7vw
+
+    .fz-mobile-17
+        font-size: 17px
+
+    .page-content__b-advantages-info-item
+        & .icon-wrapper
+            width: initial
+            height: initial
+            +position(absolute, 0 none none 50%)
+            +transform(translateX(-50%))
+        & p
+            padding-left: 0
+            padding-top: 70px
+            text-align: center
+
+
+    .page-content__b-calculate__form__main
+        & .input-block
+            text-align: center
+
+    .page-content__b-calculate__form__inner
+        & [class*='page-content__b-calculate__form__']
+            padding-bottom: 20px
+
+    .first-screen .container
+        min-height: 350px
+
+    .page-content__section-title , .page-footer__b-title
+        font-size: 35px
+
+    h1
+        font-size: 33px
+    h2
+        font-size: 26px
+    h3
+        font-size: 25px
+    h4
+        font-size: 18px
+    h5
+        font-size: 18px
+
+    .first-screen__form
+        width: 100%
+
+    .page-content__blue-stripe.blue-bg
+        background-color: transparent
+
+    .page-content__blue-stripe
+        & .container
+            padding: 0 !important
+
+    .first-screen__form__header
+        border-radius: 0
+        & .fz-mobile
+            font-size: 17px
+
+    .first-screen__form:before
+        display: none
+
+    .first-screen__form__content
+        border-radius: 0
+        border-bottom: 20px solid $green
+
+
+    .advantages-slider-item
+        margin: 0
+
+    .first-screen__form-wrapper
+        padding-bottom: 0
+
+
+@media (max-width: 377px)
+    .b-advantages__adv-list-item-wrapper
+        margin-right: 0
+
+@media (max-width: 580px)
+    .page-content__b-services__icons-list
+        & .page-content__b-services__icons-item
+            flex-basis: 170px
+        flex-direction: column
+        & .icon-wrapper
+            display: none
+        & .arrow-right
+            display: none
+
+
+
