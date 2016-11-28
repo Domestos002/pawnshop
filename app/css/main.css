@@ -7379,6 +7379,10 @@ p {
   padding: 10px 0;
 }
 
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
 .page-header .navbar-collapse {
   padding: 0;
 }
@@ -8555,6 +8559,8 @@ body {
 }
 .page-header .nav > li > a {
   padding-right: 18px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .page-header__navbar-link {
@@ -8581,7 +8587,7 @@ body {
 }
 
 .page-header {
-  padding: 20px 0 20px 0;
+  padding: 0;
   margin: 0;
   border-bottom: 5px solid #00008c;
 }
@@ -8716,6 +8722,7 @@ body {
   text-shadow: 4.9px 4.9px 6px black;
   font-weight: 400;
   line-height: 40px;
+  margin: 0;
 }
 
 .first-screen {
@@ -8752,11 +8759,11 @@ body {
   background-color: #238c00;
 }
 .page-content__b-services .page-content__b-services__icons-list .icon-wrapper {
-  transform: translateY(180%);
-  -ms-transform: translateY(180%);
-  -webkit-transform: translateY(180%);
-  -moz-transform: translateY(180%);
-  -o-transform: translateY(180%);
+  transform: translateY(150%);
+  -ms-transform: translateY(150%);
+  -webkit-transform: translateY(150%);
+  -moz-transform: translateY(150%);
+  -o-transform: translateY(150%);
 }
 .page-content__b-services .page-content__b-services__icons-list .arrow-right {
   z-index: 1;
@@ -8926,7 +8933,7 @@ body {
   background-size: cover;
   background-position: center center;
   min-height: 400px;
-  width: 760px;
+  width: 726px;
   padding: 35px;
   position: absolute;
   top: 50%;
@@ -9149,8 +9156,8 @@ body {
   border-radius: 50%;
   margin-right: 10px;
   position: absolute;
-  top: calc(50% - 14px);
-  left: -25px;
+  top: 0;
+  left: 0;
 }
 .page-content__b-calculate__form__inner .page-content__b-calculate__form__main input:checked + .checkbox-icon {
   border: 1px solid #238c00;
@@ -9210,6 +9217,7 @@ body {
   text-align: center;
   margin-left: 85px;
   margin-right: 85px;
+  margin-top: 0;
 }
 
 .advantages-slider-list {
