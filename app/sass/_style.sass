@@ -186,7 +186,7 @@ body
     -webkit-background-size: cover
     background-size: cover
     background-repeat: no-repeat
-    background-position: center center
+    background-position: center 95%
     & .container
         min-height: 550px
 
@@ -202,9 +202,9 @@ body
 
 .page-content__b-services
     background-color: $green
-    .page-content__b-services__icons-list
+    .page-content__b-services__icons-list //324354
         & .icon-wrapper
-            +transform(translateY(-50%))
+            +transform(translateY(+180%))
         .arrow-right
             +arr(40px, 3px, r, #fff)
             margin-right: 5px
@@ -269,7 +269,7 @@ body
     display: flex
     justify-content: center
     align-items: center
-    margin-right: 15px
+    margin-right: 20px
     &:not(:last-child)
         margin-bottom: 20px
 
@@ -329,13 +329,17 @@ body
 .shell-w45
     width: 45%
 
+.b-application-form
+    & .btn
+        padding: 8px 25px 8px 25px
+
 .b-application-form-wrapper
     +retina-bg(" application_bg.png", " application_bg@2x.png")
     //htygwgr
     background-size: cover
     background-position: center center
     min-height: 400px
-    width: 720px
+    width: 760px
     padding: 35px
     +position(absolute, 50% none none 50%)
     +transform(translate(-50%, -50%))
@@ -361,7 +365,7 @@ body
     +position(absolute, 0 0 0 calc(100% - 20px))
     +retina-bg("person.png", "person@2x.png")
     background-size: cover
-    background-position: 15% center
+    background-position: 0 center
     height: 100%
     width: calc(100% - 41.66667%)
     +transform(translateX(-100%))
@@ -464,7 +468,7 @@ body
 .page-content__b-calculate__form__inner
     +make-row(40px)
     +clearfix()
-    & [class*='page-content__b-calculate__form__']
+    //& [class*='page-content__b-calculate__form__']
         &:not(:last-child)
             padding-bottom: 45px
 
@@ -474,18 +478,14 @@ body
         &:not(:last-child)
             margin-bottom: 30px
 
-.page-content__b-calculate__form__main-inner
-    padding-right: 37px
-
 .page-content__b-calculate__form__inner
 
     & .page-content__b-calculate__form__main
         +make-md-column(5, 40px)
         & .input-block
             position: relative
-            width: calc(50% - 20px)
-            & p
-                margin-left: 30px
+            flex-basis: 200px
+            flex-shrink: 0
 
         & input
             cursor: pointer
@@ -516,14 +516,15 @@ body
 
         & .checkbox-icon
             content: ''
-            width: 22px
             height: 22px
+            flex-shrink: 0
+            flex-basis: 22px
+            margin-right: 10px
             border-radius: 50%
             z-index: 2
             background-color: $green
-            +position(absolute, 50% none none 0)
-            +transform(translateY(-50%))
             display: inline-block
+            position: relative
 
 
 .page-content__b-calculate__form__contact-inform
@@ -533,7 +534,6 @@ body
 .page-content__b-calculate__form__contact-inform__inner
     border: 1px solid #fff
     padding: 15px 20px
-    margin-left: -37px
 
 .advantages-slider-item
     text-align: center
@@ -550,7 +550,7 @@ body
         transform: translateY(25%)
 
     & .owl-dots
-        margin-bottom: 15px
+        margin-bottom: 28px
         order: 1
         width: 100%
         display: flex
@@ -680,6 +680,10 @@ body
         & .tooltip-arrow
             display: none
 
+    & .btn
+        line-height: 36px
+        border-radius: 12px
+
 .page-content__b-calculate__form__main
     & .tooltip-inner
         color: #fff !important
@@ -692,5 +696,5 @@ body
             background-color: $color-brand-2 * 0.8
             
         & .icon-bar
-            background-color: $color-brand-1
+            background-color: #ccc
 

@@ -88,7 +88,7 @@
                 <div class="page-content__section-title text-black tac hidden-lg mb50">
                     6 причин взять автозайм
                 </div>
-                <div class="advantages-slider-list owl-carousel mb45 tac">
+                <div class="advantages-slider-list owl-carousel mb35 tac">
                     {% set advSliderList = [
                     {
                     title: "1. Низкая процентная ставка",
@@ -122,7 +122,7 @@
                     ] %}
                     {% for item in advSliderList %}
                         <div class="advantages-slider-item">
-                            <h3 class="f-normal lh36 mb5">
+                            <h3 class="f-normal lh36 mb20">
                                 <p class="advantages-slider-item__number"></p>{{ item.title }}
                             </h3>
                             <p class="text-black fz17 f-normal lh20">
@@ -140,26 +140,26 @@
                 <div class="page-content__section-title text-white mb50">
                     Как воспользоваться услугами?
                 </div>
-                <div class="page-content__b-services__icons-list fx-center mb45">
+                <div class="page-content__b-services__icons-list fx-center fx-items-start mb45">
                     <div class="page-content__b-services__icons-item tac">
                         <div class="circle-icon-wrapper mb30 ">
                             <i class="icon-edit "></i>
                         </div>
-                        <h3 class="services-text text-white f-normal">Оставляете&nbsp;заявку</h3>
+                        <h3 class="services-text text-white f-normal">Оставляете  заявку</h3>
                     </div>
                     <span class="icon-wrapper"> <i class="arrow-right"></i></span>
                     <div class="page-content__b-services__icons-item tac">
                         <div class="circle-icon-wrapper mb30 ">
                             <i class="icon-search"></i>
                         </div>
-                        <h3 class="services-text text-white f-normal">Проводим&nbsp;осмотр</h3>
+                        <h3 class="services-text text-white f-normal">Проводим  осмотр</h3>
                     </div>
                     <span class="icon-wrapper"><i class="arrow-right"></i></span>
                     <div class="page-content__b-services__icons-item tac">
                         <div class="circle-icon-wrapper mb30 ">
                             <i class="icon-wallet ml8"></i>
                         </div>
-                        <h3 class="services-text text-white f-normal">Получаете&nbsp;деньги</h3>
+                        <h3 class="services-text text-white f-normal">Получаете  деньги</h3>
                     </div>
                 </div>
                 <a href="#" class="btn blue-btn">Оставить заявку</a>
@@ -171,7 +171,7 @@
                 <div class="page-content__section-title text-blue mb45">
                     Что требуется для оформления займа?
                 </div>
-                <div class="fx-center fx-baseline-lg fx-column-sm fx-center-sm mb45 ">
+                <div class="fx-center fx-baseline-lg fx-column-sm fx-center-sm mb35 ">
                     <div class="square-wrapper-outer">
                         <div class="square-wrapper fx-center mr20 mb15">
                             <div class="img-wrapper">
@@ -212,16 +212,16 @@
                         </div>
                         <div class="page-content__b-calculate__form__main text-white tal">
                             <div class="page-content__b-calculate__form__main-inner">
-                            <div class="mb25 fx-justify">
-                                <div class="input-block ">
+                            <div class="mb25 fx-justify fx-wrap ">
+                                <div class="input-block fx-justify ">
                                     <input type="checkbox" name="" id="">
-                                    <span class="checkbox-icon"></span>
-                                    <p class="fz15 lh18 f-normal text-white">С правом на вождение</p>
+                                    <span class="checkbox-icon dib"></span>
+                                    <span class="fz15 lh18 f-normal dib text-white">С правом на вождение</span>
                                 </div>
-                                <div class="input-block ">
+                                <div class="input-block fx-justify ">
                                     <input type="checkbox" name="" id="">
-                                    <span class="checkbox-icon"></span>
-                                    <p class="fz15 lh18 f-normal text-white">С правом на вождение</p>
+                                    <span class="checkbox-icon dib"></span>
+                                    <p class="fz15 lh18 f-normal dib text-white">Без права на вождение</p>
                                 </div>
                             </div>
                             {% include "widgets/slider-range.twig" %}
@@ -417,8 +417,8 @@
 
         <section class="page-content__b-get-consultation dark-grey-bg clearfix" id="car-loan">
             <div class="container p-rel ">
-                <div class="no-gutter">
-                    <div class="col-md-5 col-xs-12">
+                <div class="no-gutter page-content__b-get-consultation__form-shell ">
+                    <div class="col-md-5 col-xs-12 page-content__b-get-consultation__form-wrapper">
                         <div class=" grey-bg page-content__b-get-consultation__form tac">
                             {% include "elements/input-form.twig" with
                             {"form_title" : "Необходимо финансирование? Нет денег на реализацию своих идей?",
@@ -427,7 +427,7 @@
                             "form_btn_color": "blue-btn"} %}
                         </div>
                     </div>
-                    <div class="col-xs-7 visible-lg visible-md hidden-xs   page-content__b-get-consultation__photo">
+                    <div class="page-content__b-get-consultation__photo">
                     </div>
                 </div>
             </div>
@@ -475,7 +475,7 @@
                                 <div class="accordion-toggle mb20 cur-p" data-toggle="collapse"
                                      data-parent="#accordion2" href="#{{ item.id }}">
                                     <div class="accordeon-item-number">{{ item.number }}</div>
-                                    <p class="text-blue fz25 fz-tablet-20 fz-mobile-17 f-normal text-blue lh30">
+                                    <p class="text-blue fz25 lh-mobile-20 fz-tablet-20 fz-mobile-17 f-normal text-blue lh30">
                                         {{ item.title }}
                                     </p>
                                 </div>

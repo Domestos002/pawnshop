@@ -4,17 +4,26 @@
         loop: true,
         nav: true,
         dots: true,
-        margin: 0,
+        margin: 20,
         responsive: {
             320: {
-                nav: true,
+                nav: false,
                 items: 1
             },
 
+            400: {
+                nav: false,
+                items: 1
+            },
 
-            720: {
+            600: {
                 nav: true,
                 items: 2
+            },
+
+            780: {
+                nav: true,
+                items: 3
             },
 
             991: {

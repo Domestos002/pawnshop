@@ -249,11 +249,14 @@ h1, h2, h3, h4, h5
 
 .btn
     text-shadow: 2.1px 2.1px 3px rgba(0, 0, 0, 0.8)
-    font-family: $font-base
-    padding-left: 55px
-    padding-right: 55px
-    line-height: 25px
-    border-radius: 10px
+    font-family: $font-base-bold
+    padding: 13px 25px 13px 25px
+    line-height: 20px //whte
+    font-size: 20px
+    border-radius: 12px
+    max-width: 305px
+    white-space: normal !important
+
 
 .btn-green
     background: linear-gradient(to bottom, #31c100, #258d02)
@@ -292,7 +295,7 @@ h1, h2, h3, h4, h5
             +arr(60px, 4px, l, #909090)
         &:hover
             &:before
-                +arr(60px, 4px, l, #909090 / 0.8)
+                border-color: #909090 / 0.8
                 +trans()
     & .owl-next
         +position(absolute, 0 0 0 none)
@@ -300,7 +303,7 @@ h1, h2, h3, h4, h5
             +arr(60px, 4px, r, #909090)
         &:hover
             &:before
-                +arr(60px, 4px, r, #909090 / 0.8)
+                border-color: #909090 / 0.8
                 +trans()
 
 //__________________________slider______________________________________
