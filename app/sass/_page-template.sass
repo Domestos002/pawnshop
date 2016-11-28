@@ -1,6 +1,9 @@
 @import _imports.sass
 
 //________________________________reset____________________________________
+p
+    margin: 0
+
 .form-control
     height: 100%
 
@@ -76,11 +79,20 @@
 .text-green
     color: $green
 
+.fz17
+    font-size: 17px
+
 .fz28
     font-size: 28px
 
 .fz30
     font-size: 30px
+
+.fz99
+    font-size: 99px
+
+.fz42
+    font-size: 42px
 
 .fz20
     font-size: 20px
@@ -97,6 +109,9 @@
 .fz12
     font-size: 12px
 
+.fz60
+    font-size: 60px
+
 .fz80
     font-size: 80px
 
@@ -110,7 +125,16 @@
     line-height: em(34px, 17px)
 
 .lh30
-    line-height: em(30px, 17px)
+    line-height: em(30px, 17px) //ethry
+
+.lh0
+    line-height: 0
+
+.lh05em
+    line-height: 0.5em
+
+.lh01em
+    line-height: 0.1em
 
 .lh36
     line-height: em(36px, 17px)
@@ -120,6 +144,10 @@
 
 .lh24
     line-height: em(24px, 17px)
+
+.lh46
+    line-height: 46px !important
+
 
 .lh28
     line-height: em(24px, 17px)
@@ -254,19 +282,22 @@ h1, h2, h3, h4, h5
         line-height: 0
         background-color: transparent
         @extend .fx-center
-        &:hover
-            background-color: #efefef
-            +trans()
     & .owl-prev
         +position(absolute, 0 none 0 0)
         &:before
-            margin-left: 30px
             +arr(60px, 4px, l, #909090)
+        &:hover
+            &:before
+                +arr(60px, 4px, l, #909090 / 0.8)
+                +trans()
     & .owl-next
         +position(absolute, 0 0 0 none)
         &:before
-            margin-right: 30px
             +arr(60px, 4px, r, #909090)
+        &:hover
+            &:before
+                +arr(60px, 4px, r, #909090 / 0.8)
+                +trans()
 
 //__________________________slider______________________________________
 .slider-handle.round

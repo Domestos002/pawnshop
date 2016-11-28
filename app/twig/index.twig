@@ -4,12 +4,12 @@
         <div class="first-screen p-rel">
             <div class="container p-rel">
                 <div class="img-wrapper first-screen__notebook-img  dib vab">
-                    <img src="img/ notebook.png" alt="" class="img-responsive p-rel">
-                    <div class="first-screen__notebook-img__text text-blue tac dib ff-sub lh24 fz20 fz">
+                    <img src="img/nodebook-with-text.png" alt="" class="img-responsive p-rel">
+                    {#<div class="first-screen__notebook-img__text text-blue tac dib ff-sub lh24 fz20 fz">
                         Автоломбард - выдача займов под <br> залог авто <br>
                         от <p class="fz30 dib">200 000</p> <br>
                         до <p class="fz30 dib">12 000 000</p> тенге
-                    </div>
+                    </div>#}
                 </div>
                 <h2 class="text-white first-screen__title tar mb50">
                     Срочно нужна взаймы крупная сумма денег, <br>
@@ -27,9 +27,9 @@
                 <div class="reasons__title visible-lg">
                     <p class="reasons__title__big-number ff-sub text-white dib vab mr30 ">6</p>
                     <div class="reasons__title__content dib tar fx-column text-white  ">
-                        <span class="ff-sub fz80 vab">причин</span>
-                        <span class="ff-sub vab">взять</span>
-                        <span class="ff-sub vab">автозайм</span>
+                        <span class="ff-sub fz99 vab">причин</span>
+                        <span class="ff-sub fz60 lh46 vab">взять</span>
+                        <span class="ff-sub fz60 lh46 vab">автозайм</span>
                     </div>
                 </div>
                 <div class="first-screen__form-wrapper tac">
@@ -41,7 +41,7 @@
                                     Вы можете получить!
                                 </p>
                             </div>
-                            <form class="first-screen__form__content">
+                            <form class="first-screen__form__content tal">
                                 {% include "widgets/slider-range.twig" %}
                                 <div class="first-screen__form__content__input-list mb20">
                                     {% set advList = [
@@ -88,7 +88,7 @@
                 <div class="page-content__section-title text-black tac hidden-lg mb50">
                     6 причин взять автозайм
                 </div>
-                <div class="advantages-slider-list owl-carousel mb35 tac">
+                <div class="advantages-slider-list owl-carousel mb45 tac">
                     {% set advSliderList = [
                     {
                     title: "1. Низкая процентная ставка",
@@ -122,7 +122,7 @@
                     ] %}
                     {% for item in advSliderList %}
                         <div class="advantages-slider-item">
-                            <h3 class="f-normal lh36 mb25">
+                            <h3 class="f-normal lh36 mb5">
                                 <p class="advantages-slider-item__number"></p>{{ item.title }}
                             </h3>
                             <p class="text-black fz17 f-normal lh20">
@@ -145,21 +145,21 @@
                         <div class="circle-icon-wrapper mb30 ">
                             <i class="icon-edit "></i>
                         </div>
-                        <h3 class="text-white f-normal">Оставляете заявку</h3>
+                        <h3 class="services-text text-white f-normal">Оставляете&nbsp;заявку</h3>
                     </div>
                     <span class="icon-wrapper"> <i class="arrow-right"></i></span>
                     <div class="page-content__b-services__icons-item tac">
                         <div class="circle-icon-wrapper mb30 ">
                             <i class="icon-search"></i>
                         </div>
-                        <h3 class="text-white f-normal">Проводим осмотр</h3>
+                        <h3 class="services-text text-white f-normal">Проводим&nbsp;осмотр</h3>
                     </div>
                     <span class="icon-wrapper"><i class="arrow-right"></i></span>
                     <div class="page-content__b-services__icons-item tac">
                         <div class="circle-icon-wrapper mb30 ">
                             <i class="icon-wallet ml8"></i>
                         </div>
-                        <h3 class="text-white f-normal">Получаете деньги</h3>
+                        <h3 class="services-text text-white f-normal">Получаете&nbsp;деньги</h3>
                     </div>
                 </div>
                 <a href="#" class="btn blue-btn">Оставить заявку</a>
@@ -211,6 +211,7 @@
                             </div>
                         </div>
                         <div class="page-content__b-calculate__form__main text-white tal">
+                            <div class="page-content__b-calculate__form__main-inner">
                             <div class="mb25 fx-justify">
                                 <div class="input-block ">
                                     <input type="checkbox" name="" id="">
@@ -224,6 +225,8 @@
                                 </div>
                             </div>
                             {% include "widgets/slider-range.twig" %}
+                            </div>
+
                         </div>
                         <div class="page-content__b-calculate__form__contact-inform">
                             <div class="page-content__b-calculate__form__contact-inform__inner">
@@ -231,10 +234,10 @@
                                     Рассчитать лучшие условия
                                     кредитования для Вас
                                 </h5>
-                                <div class="img-wrapper mb10">
+                                <div class="input-wrapper mb10">
                                     <input type="text" class="fluid " placeholder="Ваше имя">
                                 </div>
-                                <div class="img-wrapper">
+                                <div class="input-wrapper">
                                     <input type="text" class="fluid inputmask-phone " placeholder="Номер телефона">
                                 </div>
                             </div>
@@ -248,7 +251,7 @@
         </section>
         <section class="page-content__block page-content__b-about-us" id="about-us">
             <div class="container tac">
-                <div class="page-content__section-title text-green mb45">
+                <div class="page-content__section-title text-green mb30">
                     О нас
                 </div>
                 <div class="input-wrapper mb35">
@@ -361,7 +364,7 @@
                 <div class="b-application-form-wrapper">
                     <div class="shell-w45">
                         {% include "elements/input-form.twig" with
-                        {"form_title" : "Успейте получить специальные условия",
+                        {"form_title" : "Успейте получить специальные&nbsp;условия",
                         "form_title_label" : "Заполните форму заявки и специалист компании свяжется с Вами!",
                         "form_btn_text" : "Оставить заявку",
                         "form_btn_color": "blue-btn"} %}
@@ -371,7 +374,7 @@
         </section>
         <section class="page-content__block page-content__b-reviews" id="reviews">
             <div class="container">
-                <div class="page-content__section-title text-blue tac mb45">
+                <div class="page-content__section-title text-blue tac mb25">
                     Отзывы
                 </div>
                 <div class="page-content__b-reviews__slider-list owl-carousel">

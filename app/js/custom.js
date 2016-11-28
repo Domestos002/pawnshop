@@ -4,7 +4,7 @@
         loop: true,
         nav: true,
         dots: true,
-        margin: 10,
+        margin: 0,
         responsive: {
             320: {
                 nav: true,

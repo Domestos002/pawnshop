@@ -4,6 +4,9 @@
 @import _framework.sass
 @import _icons.sass
 
+
+
+
 *:not(.tdu)
     text-decoration: none !important
 
@@ -15,8 +18,8 @@
 
 .container
     width: auto
-    max-width: 1160px !important
-    padding: 0 20px 0 20px !important
+    max-width: 1205px !important
+    padding: 0 20px !important
 
 *
     -webkit-box-sizing: border-box
@@ -28,8 +31,11 @@ input
     background-color: #eee
     height: 40px
     box-shadow: none
+    font-family: $font-base
     padding: 13px
     border: none
+    font-size: 14px
+    color: $black
     +phc($grey)
 a
     text-decoration: none
@@ -48,11 +54,16 @@ body
 .blue-bg
     background-color: $blue
 
+.navbar
+    margin-bottom: 0
+
 /*-------------------page-content__b-services------------------*/
 .page-header
     +trans()
     .nav > li > a
-        padding-right: 20px
+        padding-right: 18px
+
+
 
 .page-header__navbar-link
     font-size: 15px
@@ -60,6 +71,8 @@ body
 .page-header__logo
     flex-basis: 250px
     flex-shrink: 0
+    & p
+        color: $lightgrey
 
 .page-header__phone
     flex-basis: 320px
@@ -70,12 +83,8 @@ body
     font-size: 40px
     line-height: 48px
 
-.page-header__logo
-    & p
-        color: $lightgrey
-
 .page-header
-    padding: 27px 0 27px 0
+    padding: 20px 0 20px 0
     margin: 0
     border-bottom: 5px solid $blue
 
@@ -85,8 +94,8 @@ body
         min-height: 277px
 
 .reasons__title
-    font-size: 60px
-    +position(absolute, 0 0 0 0)
+    font-size: 70px
+    +position(absolute, 0 0 0 50px)
     width: 42%
     -webkit-box-sizing: border-box
     -moz-box-sizing: border-box
@@ -95,14 +104,14 @@ body
         line-height: 0.58em
 
 .reasons__title__big-number
-    font-size: 330px
+    font-size: 363px
     line-height: 0.58em
     //2y7
     +position(absolute, 102% none none)
     +transform(translateY(-100%))
 
 .reasons__title__content
-    +position(absolute, 100% none -150px 250px)
+    +position(absolute, 100% none -190px 253px)
     +transform(translateY(-100%))
 
 .page-content__section-title, .page-footer__b-title
@@ -115,6 +124,10 @@ body
 /*-------------------first-screen------------------*/
 .first-screen__form__header
     border-radius: 21px 21px 0 0
+    padding: 12px 35px
+    background: linear-gradient(to bottom, #31c400, #238e00)
+    & p
+        text-shadow: 2.1px 2.1px 3px rgba(0, 0, 0, 0.8)
 
 .first-screen__form__content
     border-radius: 0 0 21px 21px
@@ -126,7 +139,7 @@ body
     border-radius: 21px
     max-width: 466px
     min-height: 106px
-    +position(absolute, 20% 0 none none)
+    +position(absolute, 16% 28px none none)
     +transform(translateY(-75%))
     &:before
         display: block
@@ -145,12 +158,6 @@ body
         &:not(:last-child)
             margin-bottom: 11px
 
-.first-screen__form__header
-    padding: 20px 85px
-    background: linear-gradient(to bottom, #31c400, #238e00)
-    & p
-        text-shadow: 2.1px 2.1px 3px rgba(0, 0, 0, 0.8)
-
 .first-screen__form__content
     background-color: #fff
     padding: 20px
@@ -159,12 +166,12 @@ body
             margin-bottom: 12px
 
 .first-screen__car-img
-    +position(absolute, none none calc(0% - 50px) 15%)
+    +position(absolute, none none calc(0% - 58px) 14%)
     z-index: 300
 
 .first-screen__notebook-img
     +position(absolute, none none none -6%)
-    width: 460px
+    width: 475px
     height: 540px
     z-index: 200
 
@@ -174,7 +181,7 @@ body
     line-height: 40px
 
 .first-screen
-    padding-top: 40px
+    padding-top: 30px
     +retina-bg("city-bg.png", "city-bg@2x.png")
     -webkit-background-size: cover
     background-size: cover
@@ -200,11 +207,12 @@ body
             +transform(translateY(-50%))
         .arrow-right
             +arr(40px, 3px, r, #fff)
-            margin-right: 30px
-            margin-left: 30px
+            margin-right: 5px
+            margin-left: -20px
 
 .page-content__b-services__icons-item
-    flex-basis: 250px
+    position: relative
+    flex-basis: 280px
     flex-shrink: 1
     display: inline-block
     & .circle-icon-wrapper
@@ -229,8 +237,8 @@ body
         border: 1px solid #b5b5b5
 
 .page-content__block
-    padding-top: 55px
-    padding-bottom: 45px
+    padding-top: 40px
+    padding-bottom: 40px
 
 /*-------------------page-content__b-advantages-info------------------*/
 
@@ -351,9 +359,9 @@ body
 
 .page-content__b-get-consultation__photo
     +position(absolute, 0 0 0 calc(100% - 20px))
-    background-image: url("http://placehold.it/1920x1080")
+    +retina-bg("person.png", "person@2x.png")
     background-size: cover
-    background-position: center center
+    background-position: 15% center
     height: 100%
     width: calc(100% - 41.66667%)
     +transform(translateX(-100%))
@@ -370,7 +378,7 @@ body
     min-height: 455px
 
 .page-content__b-get-consultation__form
-    padding: 35px 70px
+    padding: 35px 90px
     min-height: 455px
     -webkit-box-sizing: border-box
     -moz-box-sizing: border-box
@@ -422,11 +430,7 @@ body
 
 .page-content__b-shipping__form
     width: 33.33333%
-
-.page-content__b-shipping__form__input-list
-    padding: 35px 70px
-
-
+    padding: 0 43px
 
 .circle-icon-wrapper
     background-color: #fff
@@ -468,8 +472,57 @@ body
         &:not(:last-child)
             margin-bottom: 30px
 
-.page-content__b-calculate__form__main
-    +make-md-column(5, 40px)
+.page-content__b-calculate__form__main-inner
+    padding-right: 37px
+
+.page-content__b-calculate__form__inner
+
+    & .page-content__b-calculate__form__main
+        +make-md-column(5, 40px)
+        & .input-block
+            position: relative
+            width: calc(50% - 20px)
+            & p
+                margin-left: 30px
+
+        & input
+            cursor: pointer
+            width: 100%
+            height: 18px
+            opacity: 0
+            z-index: 20
+            border: 1px solid #a7a9ac
+            border-radius: 50%
+            margin-right: 10px
+            +position(absolute, calc(50% - 14px) none none -25px)
+            &:checked
+                & + .checkbox-icon
+                    border: 1px solid $green
+                    +trans()
+                    &:before
+                        +trans()
+                        z-index: 2
+                        display: inline-block
+                        width: 12px
+                        height: 12px
+                        background-color: #fff
+                        border-radius: 50%
+                        @extend .abs_centered
+                        content: ''
+                        font-size: 14px
+
+
+        & .checkbox-icon
+            content: ''
+            width: 22px
+            height: 22px
+            border-radius: 50%
+            z-index: 2
+            background-color: $green
+            +position(absolute, 50% none none 0)
+            +transform(translateY(-50%))
+            display: inline-block
+
 
 .page-content__b-calculate__form__contact-inform
     +make-md-column(4, 40px)
@@ -478,54 +531,7 @@ body
 .page-content__b-calculate__form__contact-inform__inner
     border: 1px solid #fff
     padding: 15px 20px
-
-.page-content__b-calculate__form__main
-    & .input-block
-        position: relative
-        width: calc(50% - 20px)
-        & p
-            margin-left: 30px
-
-
-.page-content__b-calculate__form__main
-    & input
-        cursor: pointer
-        width: 100%
-        height: 18px
-        opacity: 0
-        z-index: 20
-        border: 1px solid #a7a9ac
-        border-radius: 50%
-        margin-right: 10px
-        +position(absolute, calc(50% - 14px) none none -25px)
-        &:checked
-            & + .checkbox-icon
-                border: 1px solid $green
-                +trans()
-                &:before
-                    +trans()
-                    z-index: 2
-                    display: inline-block
-                    width: 12px
-                    height: 12px
-                    background-color: #fff
-                    border-radius: 50%
-                    @extend .abs_centered
-                    content: ''
-                    font-size: 14px
-
-
-    & .checkbox-icon
-        content: ''
-        width: 22px
-        height: 22px
-        border-radius: 50%
-        z-index: 2
-        background-color: $green
-        +position(absolute, 50% none none 0)
-        +transform(translateY(-50%))
-        display: inline-block
-
+    margin-left: -37px
 
 .advantages-slider-item
     text-align: center
@@ -542,6 +548,7 @@ body
         transform: translateY(25%)
 
     & .owl-dots
+        margin-bottom: 15px
         order: 1
         width: 100%
         display: flex
@@ -576,7 +583,7 @@ body
                 border: 7px solid $blue
                 background-color: $green
         &:not(:last-child)
-            margin-right: 30px
+            margin-right: 5px
 
 
 
@@ -676,6 +683,7 @@ body
         color: #fff !important
 
 .page-header
+    min-height: 105px
     & .navbar-toggle
         background-color: $color-brand-2
         &:hover
