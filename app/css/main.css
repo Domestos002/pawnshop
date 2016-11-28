@@ -7510,6 +7510,10 @@ h1, h2, h3, h4, h5 {
   line-height: 34px;
 }
 
+.lh08 {
+  line-height: 0.8em !important;
+}
+
 .lh30 {
   line-height: 30px;
 }
