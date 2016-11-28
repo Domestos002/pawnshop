@@ -155,6 +155,18 @@
       "css": "phone-circled",
       "code": 59404,
       "src": "elusive"
+    },
+    {
+      "uid": "8167f6441d2557a90d717a7fc3248760",
+      "css": "lock-open-alt-1",
+      "code": 61557,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "29e7f6072d5935d7818204d9b088508b",
+      "css": "block",
+      "code": 59405,
+      "src": "entypo"
     }
   ]
 }

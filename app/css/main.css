@@ -8115,6 +8115,10 @@ h1.font-normal, h2.font-normal, h3.font-normal, h4.font-normal, h5.font-normal {
   text-decoration: underline;
 }
 
+.td-th {
+  text-decoration: line-through;
+}
+
 .mb15 {
   margin-bottom: 15px;
 }
@@ -8351,6 +8355,14 @@ h1.font-normal, h2.font-normal, h3.font-normal, h4.font-normal, h5.font-normal {
   content: "";
 }
 
+.icon-lock-open-alt-1:before {
+  content: "";
+}
+
+.icon-block:before {
+  content: "";
+}
+
 .icon-facebook:before {
   content: "";
 }
@@ -8380,8 +8392,8 @@ h1.font-normal, h2.font-normal, h3.font-normal, h4.font-normal, h5.font-normal {
 }
 
 .icon-statistic {
-  background-image: url('../img/icons-sa2a91d69f0.png');
-  background-position: 0 -1556px;
+  background-image: url('../img/icons-s73b643769c.png');
+  background-position: 0 0;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -8391,9 +8403,9 @@ h1.font-normal, h2.font-normal, h3.font-normal, h4.font-normal, h5.font-normal {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
   .icon-statistic {
-    background-image: url('../img/icons-2x-s8e872e8839.png');
-    background-size: 172px auto;
-    background-position: 0 -1554px;
+    background-image: url('../img/icons-2x-s63705089bb.png');
+    background-size: 88px auto;
+    background-position: 0 0;
     height: 31px;
     width: 88px;
   }
@@ -8886,7 +8898,7 @@ body {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 100%;
+  left: calc(100% - 20px);
   background-image: url("http://placehold.it/1920x1080");
   background-size: cover;
   background-position: center center;
