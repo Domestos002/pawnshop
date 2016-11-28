@@ -9396,7 +9396,7 @@ body {
   display: none;
 }
 .first-screen__form__inner .btn, .page-content__b-calculate__form__main .btn {
-  line-height: 36px;
+  line-height: 20px;
   border-radius: 12px;
 }
 
@@ -9727,7 +9727,7 @@ body {
     border: none;
   }
   .page-header .navbar-toggle .icon-bar {
-    width: 125px;
+    width: 66px;
     height: 8px;
     border-radius: 20px;
   }
