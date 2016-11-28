@@ -447,13 +447,15 @@ body
     padding-bottom: 30px
 
 .page-footer__b-contacts__content-item
+    display: flex
+    align-items: flex-end
     padding-top: 65px
     //&:not(:last-child)
         margin-right: 80px
     &.span3
-        width: 25%
+        width: calc(25% - 25px)
     &.span6
-        width: 50%
+        width: calc(50% - 25px)
 
 .page-content__b-calculate__form
     & [class*='slider-val-']

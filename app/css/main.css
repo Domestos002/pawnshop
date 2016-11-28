@@ -7491,19 +7491,23 @@ p {
 }
 
 .lh18 {
-  line-height: 1.05882em;
+  line-height: 18px;
+}
+
+.lh27 {
+  line-height: 27px;
 }
 
 .lh20 {
-  line-height: 1.17647em;
+  line-height: 20px;
 }
 
 .lh34 {
-  line-height: 2em;
+  line-height: 34px;
 }
 
 .lh30 {
-  line-height: 1.76471em;
+  line-height: 30px;
 }
 
 .lh0 {
@@ -7519,15 +7523,15 @@ p {
 }
 
 .lh36 {
-  line-height: 2.11765em;
+  line-height: 36px;
 }
 
 .lh14 {
-  line-height: 0.82353em;
+  line-height: 14px;
 }
 
 .lh24 {
-  line-height: 1.41176em;
+  line-height: 24px;
 }
 
 .lh46 {
@@ -9079,13 +9083,15 @@ body {
 }
 
 .page-footer__b-contacts__content-item {
+  display: flex;
+  align-items: flex-end;
   padding-top: 65px;
 }
 .page-footer__b-contacts__content-item.span3 {
-  width: 25%;
+  width: calc(25% - 25px);
 }
 .page-footer__b-contacts__content-item.span6 {
-  width: 50%;
+  width: calc(50% - 25px);
 }
 
 .page-content__b-calculate__form [class*='slider-val-'] {
