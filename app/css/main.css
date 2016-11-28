@@ -9406,7 +9406,7 @@ body {
 }
 .first-screen__form__inner .tooltip .tooltip-inner, .page-content__b-calculate__form__main .tooltip .tooltip-inner {
   background-color: transparent;
-  color: #748187;
+  color: #333333;
 }
 .first-screen__form__inner .tooltip .tooltip-arrow, .page-content__b-calculate__form__main .tooltip .tooltip-arrow {
   display: none;
