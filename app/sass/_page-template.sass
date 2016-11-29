@@ -38,6 +38,18 @@ h1, h2, h3, h4, h5
     & .navbar-nav
         margin: 0
 
+.accordion-group.panel
+    background-color: transparent
+    border: none
+    & .panel-title
+        background-color: transparent
+    & .panel-heading
+        background-color: transparent
+    & .panel-body
+        border: none
+    & .panel-collapse.collapse.in
+        & .panel-body
+            border: none
 
 
 //____________________________________________________________________
@@ -247,9 +259,6 @@ h1, h2, h3, h4, h5
     font-family: $font-base
     font-size: 18px
 
-.owl-nav
-    & .owl-prev, .owl-next
-        display: none
 
 /*-------------------------------------*/
 // buttons
@@ -294,7 +303,8 @@ h1, h2, h3, h4, h5
         width: 85px
         font-size: 0
         line-height: 0
-        background-color: transparent
+        background-color: #fff
+        z-index: 500
         @extend .fx-center
     & .owl-prev
         +position(absolute, 0 none 0 0)

@@ -69,7 +69,8 @@
                                     {% for item in advList %}
                                         <div class="grid-wrapper">
                                             <div class="input-wrapper fluid">
-                                                <input type="text" placeholder="{{ item.placeholder }}" class="{{ item.class }}">
+                                                <input type="text" placeholder="{{ item.placeholder }}"
+                                                       class="{{ item.class }}">
                                             </div>
                                         </div>
                                     {% endfor %}
@@ -145,21 +146,21 @@
                         <div class="circle-icon-wrapper mb30 ">
                             <i class="icon-edit "></i>
                         </div>
-                        <h3 class="services-text text-white f-normal">Оставляете  заявку</h3>
+                        <h3 class="services-text text-white f-normal">Оставляете заявку</h3>
                     </div>
                     <span class="icon-wrapper"> <i class="arrow-right"></i></span>
                     <div class="page-content__b-services__icons-item tac">
                         <div class="circle-icon-wrapper mb30 ">
                             <i class="icon-search"></i>
                         </div>
-                        <h3 class="services-text text-white f-normal">Проводим  осмотр</h3>
+                        <h3 class="services-text text-white f-normal">Проводим осмотр</h3>
                     </div>
                     <span class="icon-wrapper"><i class="arrow-right"></i></span>
                     <div class="page-content__b-services__icons-item tac">
                         <div class="circle-icon-wrapper mb30 ">
                             <i class="icon-wallet ml8"></i>
                         </div>
-                        <h3 class="services-text text-white f-normal">Получаете  деньги</h3>
+                        <h3 class="services-text text-white f-normal">Получаете деньги</h3>
                     </div>
                 </div>
                 <a href="#" class="btn blue-btn">Оставить заявку</a>
@@ -212,19 +213,19 @@
                         </div>
                         <div class="page-content__b-calculate__form__main text-white tal">
                             <div class="page-content__b-calculate__form__main-inner">
-                            <div class="mb25 fx-justify fx-wrap ">
-                                <div class="input-block fx-justify ">
-                                    <input type="checkbox" name="" id="">
-                                    <span class="checkbox-icon dib"></span>
-                                    <span class="fz15 lh18 f-normal dib text-white">С правом на вождение</span>
+                                <div class="mb25 fx-justify fx-wrap ">
+                                    <div class="input-block fx-justify ">
+                                        <input type="checkbox" name="" id="">
+                                        <span class="checkbox-icon dib"></span>
+                                        <span class="fz15 lh18 f-normal dib text-white">С правом на вождение</span>
+                                    </div>
+                                    <div class="input-block fx-justify ">
+                                        <input type="checkbox" name="" id="">
+                                        <span class="checkbox-icon dib"></span>
+                                        <p class="fz15 lh18 f-normal dib text-white">Без права на вождение</p>
+                                    </div>
                                 </div>
-                                <div class="input-block fx-justify ">
-                                    <input type="checkbox" name="" id="">
-                                    <span class="checkbox-icon dib"></span>
-                                    <p class="fz15 lh18 f-normal dib text-white">Без права на вождение</p>
-                                </div>
-                            </div>
-                            {% include "widgets/slider-range.twig" %}
+                                {% include "widgets/slider-range.twig" %}
                             </div>
 
                         </div>
@@ -440,7 +441,7 @@
                 </div>
 
 
-                <div class="page-content__b-questions__accordeon accordion p-rel" id="accordion2">
+                <div class="panel-group page-content__b-questions__accordeon" id="accordion">
                     {% set accList = [
                     {
                     number: "1",
@@ -470,23 +471,21 @@
 
                     ] %}
                     {% for item in accList %}
-                        <div class="accordion-group p-rel">
-                            <div class="accordion-heading ">
-                                <div class="accordion-toggle mb20 cur-p" data-toggle="collapse"
-                                     data-parent="#accordion2" href="#{{ item.id }}">
-                                    <div class="accordeon-item-number">{{ item.number }}</div>
-                                    <p class="text-blue fz25 lh-mobile-20 fz-tablet-20 fz-mobile-17 f-normal text-blue lh30">
-                                        {{ item.title }}
-                                    </p>
-                                </div>
-                            </div>
-                            <div id="{{ item.id }}" class="accordion-body in collapse" style="height: auto;">
-                                <div class="accordion-inner fz15 text-black f-normal lh18">
-                                    {{ item.text }}
-                                </div>
+                    <div class="panel panel-default accordion-group p-rel">
+                        <div class="panel-heading">
+                                <span class="panel-title text-blue fz25 lh-mobile-20 fz-tablet-20 fz-mobile-17 f-normal lh20">
+                                    <a data-toggle="collapse" class="accordion-toggle" data-parent="#accordion"
+                                       href="#{{ item.id }}">{{ item.title }} </a>
+                                    <span class="accordeon-item-number">{{ item.number }}</span>
+                                 </span>
+                        </div>
+                        <div id="{{ item.id }}" class="panel-collapse collapse">
+                            <div class="panel-body  fz15 text-black f-normal lh18">
+                                <p>{{ item.text }}</p>
                             </div>
                         </div>
-                    {% endfor %}
+                    </div>
+                {% endfor %}
                 </div>
             </div>
         </section>
@@ -537,7 +536,8 @@
             <a href="tel:+74956646607" class=" mb30 tdn header-phone no-hover">
                 +7 (495) 664-66-07
             </a>
-            <a href="#" class="green_btn-header popup-trigger spc mb30 "><i class=" phone-icon vam mr10"></i>Заказать звонок</a>
+            <a href="#" class="green_btn-header popup-trigger spc mb30 "><i class=" phone-icon vam mr10"></i>Заказать
+                звонок</a>
         </div>
 
     </nav>

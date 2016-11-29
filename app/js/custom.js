@@ -84,10 +84,21 @@
 
         var slider = $(".slider-range");
         slider.slider();
+        var val = slider.slider('getValue');
+        console.log(val);
+        $("#sum-value").val(val);
         slider.slider({min: 0, max: 10, value: 0, tooltip_position: 'bottom'});
         slider.on("slide", function (slideEvt) {
             $("#ex6SliderVal").text(slideEvt.value);
 
+        });
+
+        $(".accordion-toggle").on('click',function(e){
+            if ($(this).closest(".accordion-heading").siblings(".accordion-body").hasClass('in')){
+                e.stopPropagation();
+                e.preventDefault();
+                console.log("fewg");
+            }
         });
 
         $(document).on("click", '.sliding-panel-link', function (e) {

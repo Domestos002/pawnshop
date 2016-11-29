@@ -7401,6 +7401,23 @@ h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
+.accordion-group.panel {
+  background-color: transparent;
+  border: none;
+}
+.accordion-group.panel .panel-title {
+  background-color: transparent;
+}
+.accordion-group.panel .panel-heading {
+  background-color: transparent;
+}
+.accordion-group.panel .panel-body {
+  border: none;
+}
+.accordion-group.panel .panel-collapse.collapse.in .panel-body {
+  border: none;
+}
+
 /*------------------------------------- */
 [class*='icon-'] {
   font-family: "fontello";
@@ -7674,10 +7691,6 @@ h1.font-normal, h2.font-normal, h3.font-normal, h4.font-normal, h5.font-normal {
   font-size: 18px;
 }
 
-.owl-nav .owl-prev, .owl-nav .owl-next {
-  display: none;
-}
-
 /*------------------------------------- */
 .btn {
   text-shadow: 2.1px 2.1px 3px rgba(0, 0, 0, 0.8);
@@ -7724,7 +7737,8 @@ h1.font-normal, h2.font-normal, h3.font-normal, h4.font-normal, h5.font-normal {
   width: 85px;
   font-size: 0;
   line-height: 0;
-  background-color: transparent;
+  background-color: #fff;
+  z-index: 500;
 }
 .owl-nav .owl-prev {
   position: absolute;
@@ -9014,6 +9028,11 @@ body {
   box-sizing: border-box;
 }
 
+.navbar-fixed-top {
+  max-width: 1205px;
+  margin: 0 auto;
+}
+
 .page-content__b-questions__accordeon .accordion-group {
   padding-left: 70px;
 }
@@ -9933,7 +9952,7 @@ body {
     border-left: 4px solid #909090;
   }
 
-  .advantages-slider-item {
+  .advantages-slider-item, .owl-item {
     margin-left: 65px;
     margin-right: 65px;
   }

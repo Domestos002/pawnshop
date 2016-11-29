@@ -391,15 +391,22 @@ body
     -moz-box-sizing: border-box
     box-sizing: border-box
 
+
+.navbar-fixed-top
+    max-width: 1205px
+    margin: 0 auto
+
 .page-content__b-questions__accordeon
     & .accordion-group
         padding-left: 70px
         &:not(:last-child)
             margin-bottom: 35px
-    & .accordion-toggle.collapsed
-        & .accordeon-item-number
-            background-color: #666
-            +trans()
+    & .accordion-toggle
+
+        &.collapsed
+            & .accordeon-item-number
+                background-color: #666
+                +trans()
 
     & .accordeon-item-number
         +position(absolute, 0 none none 0)
@@ -674,6 +681,7 @@ body
 .first-screen__form__inner, .page-content__b-calculate__form__main
     & .tooltip
         opacity: 1 !important
+
         &.top
             top: 15px !important
 
