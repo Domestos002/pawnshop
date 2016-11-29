@@ -52,6 +52,10 @@ h1, h2, h3, h4, h5
             border: none
 
 
+.panel-heading
+    padding: 0
+
+
 //____________________________________________________________________
 
 /*-------------------------------------*/
@@ -391,20 +395,20 @@ h1, h2, h3, h4, h5
         +transform(translateY(-50%) rotate(-45deg))
 
 .sliding-panel
-    z-index: 900
+    display: block
+    z-index: 9999
     overflow: auto
-    width: 400px
+    width: 300px
     position: fixed
-    top: 0
 
-    background-color: rgba(255,255,255,0.95)
+    top: 0
     height: 100%
-    right: 100%
+    background-color: rgba(255,255,255,0.95)
+    left: -300px
     +trans()
     &.active
-        right: calc(100% - 400px)
         overflow: auto
-        & .overlay
+        //& .overlay
             display: block !important
             +trans()
 

@@ -1,22 +1,22 @@
 <div class="slider-list mb20">
     <div class="slider-block">
-        <label for="slider-range" class="lh18 mb10 fz15 f-normal">Сумма займа
+        <label for="slider-range" class="lh18 mb10 fz15  dib f-normal">Сумма займа
             (тенге)</label>
-        <input type="text" data-input-value>
+        <div class="input-wrapper dib"><input type="text" data-input-value class="data-input"></div>
         <input class="slider-range" type="text" data-slider-min="200000"
                data-slider-max="12000000" data-slider-step="1000"
-               data-slider-value="3"/>
+               data-slider-value="3" data-slider-tooltip="hide"/>
         <div class="clearfix">
             <span class="slider-val-min left">200 000</span>
             <span class="slider-val-max right">12 000 000</span>
         </div>
     </div>
     <div class="slider-block">
-        <label for="slider-range" class="lh18 mb10 fz15 f-normal">Срок займа</label>
-        <input type="text" data-input-value>
+        <label for="slider-range" class="lh18 mb10 fz15 dib  f-normal">Срок займа</label>
+        <div class="input-wrapper dib"><input type="text" data-input-value class="data-input"></div>
         <input class="slider-range" type="text" data-slider-max="180"
                data-slider-step="10"
-               data-slider-value="10"/>
+               data-slider-value="10" data-slider-tooltip="hide"/>
         <div class="clearfix">
             {#
                                                 <span  class="slider-val-min left">200000</span>

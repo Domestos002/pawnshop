@@ -1,7 +1,17 @@
 @import _imports.sass
+@media (max-width: 1220px)
+    .b-advantages__adv-list-item-wrapper
+        width: 175px
 
 @media (max-width: $screen-lg - 1px)
+
+
+    .page-header__row__inner
+        justify-content: space-between
+
     .page-header
+        padding-bottom: 5px
+        padding-top: 5px
         min-height: initial
 
     .navbar-toggle
@@ -14,6 +24,7 @@
         min-height: initial
 
     .page-header__phone
+        margin: auto
         padding-bottom: 10px
 
     .page-header__navbar
@@ -173,9 +184,7 @@
 
     .advantages-slider-list
         & .owl-dots
-            +fluid-columns(4, 20px, 20px)
             & .owl-dot
-                margin: 0
                 margin-bottom: 15px
 
     .first-screen__notebook-img, .first-screen__car-img
@@ -191,41 +200,44 @@
             font-size: 2.4vw
 
 @media (max-width: $screen-sm - 1px)
+
+
+    .page-header__navbar
+        +position(absolute, 10px 0 none none)
+    h1, h2, h3, h4, h5
+        line-height: 1.2em !important
+
+    .first-screen__title
+        line-height: 1.2em !important
+
     //.first-screen__notebook-img__text
         font-size: 2.2vw
+    .page-header__logo
+        justify-content: center
+        margin-right: 0
+
+    .page-header__row__inner
+        width: 100%
+
+
+    .page-header__phone-number
+        white-space: nowrap
+
+    .page-header__row
+        flex-direction: column
+        align-items: initial
+        justify-content: center
 
 
     .page-header__phone
-        flex-shrink: 1
-        & span
-            font-size: 5vw
-        & a
-            font-size: 3vw
-
-    .page-header__navbar
-        text-align: center
-
-    .page-header
-        & .navbar-toggle
-            background-color: transparent
-            border: none
-            & .icon-bar
-                width: 66px
-                height: 8px
-                border-radius: 20px
-            &:hover
-                background-color: transparent
+        margin: auto
+        flex-basis: initial
 
     .navbar-toggle
         display: inline-block
 
-
-    .page-header__phone
-        flex-basis: 80px
-        margin-right: 0
-
     .page-header__logo
-        flex-basis: 100px
+        flex-basis: 20px
 
     .fz-tablet-20
         font-size: 20px
@@ -342,7 +354,7 @@
                 margin-right: 10px
                 +arr(20px, 4px, l, #909090)
 
-    .advantages-slider-item, .owl-item
+    .advantages-slider-item
         margin-left: 65px
         margin-right: 65px
 
@@ -361,6 +373,75 @@
             margin: 0 auto
 
 @media (max-width: $screen-xs - 1px)
+
+    .page-content__b-services__icons-item .circle-icon-wrapper
+        width: 85px
+        height: 85px
+
+    .page-content__b-services__icons-item .circle-icon-wrapper [class*='icon-']
+        line-height: 75px
+        font-size: 40px
+
+    .sliding-panel
+        width: 100%
+        right: 100%
+        left: initial
+
+    .site-wrapper
+        +trans()
+        &.active
+            +transform(translateX(100%))
+            +trans()
+
+    .page-header__logo
+        width: calc(100% - 55px)
+    .panel-body
+        padding: 10px 0 0 0
+
+    .mb100
+        margin-bottom: 60px !important
+
+    .mb50
+        margin-bottom: 30px !important
+
+    .mb45, .mb35
+        margin-bottom: 20px !important //grh
+
+    .page-content__block
+        padding-top: 25px
+        padding-bottom: 25px
+
+    .fz-mobile-25
+        font-size: 25px
+
+    .first-screen__title
+        font-size: 22px !important
+
+    .first-screen__form-wrapper
+        padding-top: 0
+
+    .first-screen__form__header
+        padding-top: 55px
+
+    h1
+        font-size: 33px
+    h2
+        font-size: 26px
+    h3
+        font-size: 25px
+    h4
+        font-size: 18px
+    h5
+        font-size: 18px
+
+    .page-header__logo__inner
+        font-size: 9vw !important
+        h1
+            font-size: 9vw !important
+        & .page-header__logo-label
+            font-size: 10px !important
+
+
     .lh-mobile-20
         line-height: 20px
 
@@ -405,18 +486,7 @@
         min-height: 350px
 
     .page-content__section-title, .page-footer__b-title
-        font-size: 35px
-
-    h1
-        font-size: 33px
-    h2
-        font-size: 26px
-    h3
-        font-size: 25px
-    h4
-        font-size: 18px
-    h5
-        font-size: 18px
+        font-size: 30px
 
     .first-screen__form
         width: 100%
@@ -446,11 +516,25 @@
     .first-screen__form-wrapper
         padding-bottom: 0
 
+@media (max-width: 840px)
+    .b-advantages__adv-list-item-wrapper
+        width: 160px
+
 @media (max-width: 377px)
     .b-advantages__adv-list-item-wrapper
         margin-right: 0
 
 @media (max-width: 580px)
+    .advantages-slider-list
+        & .owl-dots
+            flex-wrap: wrap
+            & .owl-dot
+                & span
+                    flex-shrink: 0
+
+                padding-right: 25px
+                padding-left: 25px
+
     .page-content__b-services__icons-list
         & .page-content__b-services__icons-item
             flex-basis: 170px

@@ -1,20 +1,20 @@
 {% extends "layouts/main.twig" %}
 {% block pageContent %}
 	<div class="page-content">
-		<div class="first-screen p-rel">
+		<div class="first-screen p-rel" >
 			<div class="container p-rel">
-				<div class="img-wrapper first-screen__notebook-img  dib vab">
+				<div class="img-wrapper first-screen__notebook-img dib hidden-xs vab">
 					<img src="img/nodebook-with-text.png" alt="" class="img-responsive p-rel">
-					{#<div class="first-screen__notebook-img__text text-blue tac dib ff-sub lh24 fz20 fz">
-							Автоломбард - выдача займов под <br> залог авто <br>
-							от <p class="fz30 dib">200 000</p> <br>
-							до <p class="fz30 dib">12 000 000</p> тенге
-					</div>#}
 				</div>
 				<h2 class="text-white first-screen__title tar">
 					Срочно нужна взаймы крупная сумма денег, <br>
 					но получить кредит в банке невозможно?
 				</h2>
+                <span class="text-white first-screen__title mb30per mt50 fz30 ff-sub visible-xs hidden-sm tar">
+                    Автоломбард - выдача займов под <br> залог авто <br>
+                    от <p class="fz30 fz-mobile-25 dib text-white">200 000</p> <br>
+                    до <p class="fz30 fz-mobile-25 dib text-white">12 000 000</p> тенге
+                </span>
 				<div class="img-wrapper first-screen__car-img  dib vab">
 					<img src="img/car.png" alt="" class="img-responsive">
 				</div>
@@ -69,8 +69,7 @@
 									{% for item in advList %}
 										<div class="grid-wrapper">
 											<div class="input-wrapper fluid">
-												<input type="text" placeholder="{{ item.placeholder }}"
-															 class="{{ item.class }}">
+												<input type="text" placeholder="{{ item.placeholder }}" class="{{ item.class }}">
 											</div>
 										</div>
 									{% endfor %}
