@@ -84,13 +84,11 @@
 
         var slider = $(".slider-range");
         slider.slider();
-        var val = slider.slider('getValue');
-        console.log(val);
-        $("#sum-value").val(val);
-        slider.slider({min: 0, max: 10, value: 0, tooltip_position: 'bottom'});
+        /*var val = slider.slider('getValue');*/
+        /*console.log(val);
+        $("#sum-value").val(val);*/
         slider.on("slide", function (slideEvt) {
-            $("#ex6SliderVal").text(slideEvt.value);
-
+            $("#sum-value").text(slideEvt.value);
         });
 
         $(".accordion-toggle").on('click',function(e){
@@ -109,12 +107,14 @@
 
         $(document).on("click", '.navbar-toggle', function (e) {
             $('.sliding-panel').addClass('active');
+            $('.site-wrapper').addClass('active');
             $('body').addClass('ovh');
             e.preventDefault();
         });
 
         $(document).on("click", '.sliding-panel__close', function (e) {
             $('.sliding-panel').toggleClass('active');
+            $('.site-wrapper').removeClass('active');
             $('body').removeClass('ovh');
             e.preventDefault();
         });
@@ -127,6 +127,7 @@
             if ($(this).hasClass('sliding-panel-link')) {
                 $('body').removeClass('ovh');
                 $('.sliding-panel').removeClass('active');
+                $('.site-wrapper').removeClass('active');
             }
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                 var target = $(this.hash);

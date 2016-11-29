@@ -1,8 +1,21 @@
 @import _imports.sass
 
 @media (max-width: $screen-lg - 1px)
+    .page-header
+        min-height: initial
+
+    .navbar-toggle
+        padding-left: 10px
+
+    .page-header__logo
+        padding-bottom: 10px
+
     .navbar
         min-height: initial
+
+    .page-header__phone
+        padding-bottom: 10px
+
     .page-header__navbar
         order: 3
 
@@ -20,6 +33,8 @@
             border: none
             width: initial
             height: initial
+
+
 
     .fx-baseline-lg
         display: flex
@@ -178,8 +193,14 @@
 @media (max-width: $screen-sm - 1px)
     //.first-screen__notebook-img__text
         font-size: 2.2vw
-    .page-header__navbar
-        order: 0
+
+
+    .page-header__phone
+        flex-shrink: 1
+        & span
+            font-size: 5vw
+        & a
+            font-size: 3vw
 
     .page-header__navbar
         text-align: center
@@ -198,10 +219,6 @@
     .navbar-toggle
         display: inline-block
 
-    .page-header__row
-        flex-direction: column
-        align-items: center
-        justify-content: center
 
     .page-header__phone
         flex-basis: 80px

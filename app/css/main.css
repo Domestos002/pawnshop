@@ -7889,12 +7889,11 @@ h1.font-normal, h2.font-normal, h3.font-normal, h4.font-normal, h5.font-normal {
 .sliding-panel {
   z-index: 900;
   overflow: auto;
-  min-width: 320px;
+  width: 400px;
   position: fixed;
   top: 0;
   background-color: rgba(255, 255, 255, 0.95);
   height: 100%;
-  width: 100%;
   right: 100%;
   transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -7903,8 +7902,16 @@ h1.font-normal, h2.font-normal, h3.font-normal, h4.font-normal, h5.font-normal {
   -ms-transition: all 0.3s ease 0s;
 }
 .sliding-panel.active {
-  right: 0;
+  right: calc(100% - 400px);
   overflow: auto;
+}
+.sliding-panel.active .overlay {
+  display: block !important;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
 }
 
 .sliding-panel-link:after {
@@ -8327,6 +8334,10 @@ h1.font-normal, h2.font-normal, h3.font-normal, h4.font-normal, h5.font-normal {
   margin-top: 50px;
 }
 
+.mt20 {
+  margin-top: 20px;
+}
+
 .mt60 {
   margin-top: 60px;
 }
@@ -8489,6 +8500,27 @@ h1.font-normal, h2.font-normal, h3.font-normal, h4.font-normal, h5.font-normal {
     height: 31px;
     width: 88px;
   }
+}
+
+.site-wrapper.active {
+  margin-left: 400px;
+  overflow: hidden;
+}
+
+.overlay {
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  z-index: 400;
+  position: fixed;
+  top: 0;
+  left: 400px;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 *:not(.tdu) {
@@ -9461,8 +9493,24 @@ body {
 /*------------------------------------- */
 /*------------------------------------- */
 @media (max-width: 1199px) {
+  .page-header {
+    min-height: initial;
+  }
+
+  .navbar-toggle {
+    padding-left: 10px;
+  }
+
+  .page-header__logo {
+    padding-bottom: 10px;
+  }
+
   .navbar {
     min-height: initial;
+  }
+
+  .page-header__phone {
+    padding-bottom: 10px;
   }
 
   .page-header__navbar {
@@ -9745,8 +9793,14 @@ body {
   }
 }
 @media (max-width: 767px) {
-  .page-header__navbar {
-    order: 0;
+  .page-header__phone {
+    flex-shrink: 1;
+  }
+  .page-header__phone span {
+    font-size: 5vw;
+  }
+  .page-header__phone a {
+    font-size: 3vw;
   }
 
   .page-header__navbar {
@@ -9768,12 +9822,6 @@ body {
 
   .navbar-toggle {
     display: inline-block;
-  }
-
-  .page-header__row {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 
   .page-header__phone {

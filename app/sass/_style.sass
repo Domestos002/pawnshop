@@ -5,7 +5,23 @@
 @import _icons.sass
 
 
+.site-wrapper
+    &.active
+        margin-left: 400px
+        overflow: hidden
 
+
+
+.overlay
+    +trans()
+    z-index: 400
+    position: fixed
+    top: 0
+    left: 400px
+    right: 0
+    width: 100%
+    height: 100%
+    background: rgba(0 ,0 ,0 ,0.8)
 
 *:not(.tdu)
     text-decoration: none !important
