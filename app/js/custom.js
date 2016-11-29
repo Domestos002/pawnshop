@@ -82,16 +82,22 @@
         $('input.data-inputmask, .inputmask-phone').mask("+7 (999) 999-99-99");
 
 
-        var slider = $(".slider-range");
-        slider.slider();
-        var val = slider.slider('getValue');
-        console.log(val);
-        $("#sum-value").val(val);
-        slider.slider({min: 0, max: 10, value: 0, tooltip_position: 'bottom'});
-        slider.on("slide", function (slideEvt) {
-            $("#ex6SliderVal").text(slideEvt.value);
+        $(".slider-range").each(function () {
+            var slider = $(this);
+            slider.slider();
+            // slider.slider({min: 0, max: 10, value: 0, tooltip_position: 'bottom'});
 
+            slider.on("slide", function (slideEvt) {
+                $("#ex6SliderVal").text(slideEvt.value);
+                slider.closest('.slider-block').find('[data-input-value]').val(slideEvt.value);
+            });
+
+            console.log(slider.data('slider'));
+            setTimeout(function () {
+                slider.closest('.slider-block').find('[data-input-value]').val(slider.data('slider').value[0]);
+            }, 500);
         });
+
 
         $(".accordion-toggle").on('click',function(e){
             if ($(this).closest(".accordion-heading").siblings(".accordion-body").hasClass('in')){

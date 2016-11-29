@@ -1,544 +1,545 @@
 {% extends "layouts/main.twig" %}
 {% block pageContent %}
-    <div class="page-content">
-        <div class="first-screen p-rel">
-            <div class="container p-rel">
-                <div class="img-wrapper first-screen__notebook-img  dib vab">
-                    <img src="img/nodebook-with-text.png" alt="" class="img-responsive p-rel">
-                    {#<div class="first-screen__notebook-img__text text-blue tac dib ff-sub lh24 fz20 fz">
-                        Автоломбард - выдача займов под <br> залог авто <br>
-                        от <p class="fz30 dib">200 000</p> <br>
-                        до <p class="fz30 dib">12 000 000</p> тенге
-                    </div>#}
-                </div>
-                <h2 class="text-white first-screen__title tar">
-                    Срочно нужна взаймы крупная сумма денег, <br>
-                    но получить кредит в банке невозможно?
-                </h2>
-                <div class="img-wrapper first-screen__car-img  dib vab">
-                    <img src="img/car.png" alt="" class="img-responsive">
-                </div>
+	<div class="page-content">
+		<div class="first-screen p-rel">
+			<div class="container p-rel">
+				<div class="img-wrapper first-screen__notebook-img  dib vab">
+					<img src="img/nodebook-with-text.png" alt="" class="img-responsive p-rel">
+					{#<div class="first-screen__notebook-img__text text-blue tac dib ff-sub lh24 fz20 fz">
+							Автоломбард - выдача займов под <br> залог авто <br>
+							от <p class="fz30 dib">200 000</p> <br>
+							до <p class="fz30 dib">12 000 000</p> тенге
+					</div>#}
+				</div>
+				<h2 class="text-white first-screen__title tar">
+					Срочно нужна взаймы крупная сумма денег, <br>
+					но получить кредит в банке невозможно?
+				</h2>
+				<div class="img-wrapper first-screen__car-img  dib vab">
+					<img src="img/car.png" alt="" class="img-responsive">
+				</div>
 
-            </div>
+			</div>
 
-        </div>
-        <div class="page-content__blue-stripe blue-bg p-rel">
-            <div class="container p-rel">
-                <div class="reasons__title visible-lg">
-                    <p class="reasons__title__big-number ff-sub text-white dib vab mr30 ">6</p>
-                    <div class="reasons__title__content dib tar fx-column text-white  ">
-                        <span class="ff-sub fz99 vab">причин</span>
-                        <span class="ff-sub fz60 lh46 vab">взять</span>
-                        <span class="ff-sub fz60 lh46 vab">автозайм</span>
-                    </div>
-                </div>
-                <div class="first-screen__form-wrapper tac">
-                    <div class="first-screen__form dib p-rel">
-                        <div class="first-screen__form__inner">
-                            <div class="first-screen__form__header tac">
-                                <p class="fz20 lh24 text-white fz-mobile ff-base-bold">
-                                    Введите данные и узнайте моментально, какую сумму
-                                    Вы можете получить!
-                                </p>
-                            </div>
-                            <form class="first-screen__form__content tal">
-                                {% include "widgets/slider-range.twig" %}
-                                <div class="first-screen__form__content__input-list mb20">
-                                    {% set advList = [
-                                    {
-                                    placeholder: "Модель автомобиля",
-                                    class:""
-                                    },
-                                    {
-                                    placeholder: "Марка автомобиля",
-                                    class:""
-                                    },
-                                    {
-                                    placeholder: "Год выпуска",
-                                    class:""
-                                    },
-                                    {
-                                    placeholder: "Ваше имя",
-                                    class:""
-                                    },
-                                    {
-                                    placeholder: "Номер телефона",
-                                    class:"inputmask-phone"
-                                    },
-                                    ] %}
-                                    {% for item in advList %}
-                                        <div class="grid-wrapper">
-                                            <div class="input-wrapper fluid">
-                                                <input type="text" placeholder="{{ item.placeholder }}"
-                                                       class="{{ item.class }}">
-                                            </div>
-                                        </div>
-                                    {% endfor %}
-                                </div>
-                                <div class="tac">
-                                    <a href="#" class="btn btn-green fz20">Рассчитать</a>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <section class="page-content__block advantages-slider">
-            <div class="container">
-                <div class="page-content__section-title text-black tac hidden-lg mb50">
-                    6 причин взять автозайм
-                </div>
-                <div class="advantages-slider-list owl-carousel mb35 tac">
-                    {% set advSliderList = [
-                    {
-                    title: "1. Низкая процентная ставка",
-                    text: "От 3% – этот невысокий процент обеспечивает вам максимальную возможность справиться с выплатами. Наша цель – не разовая прибыль, а установление взаимовыгодных отношений с наибольшим количеством заемщиков, которые продолжат пользоваться нашими услугами в будущем и станут рекомендовать нас своим друзьям и близким."
-                    },
-                    {
-                    title: "2. Низкая процентная ставка",
-                    text: "От 3% – этот невысокий процент обеспечивает вам максимальную возможность справиться с выплатами. Наша цель – не разовая прибыль, а установление взаимовыгодных отношений с наибольшим количеством заемщиков, которые продолжат пользоваться нашими услугами в будущем и станут рекомендовать нас своим друзьям и близким."
-                    },
+		</div>
+		<div class="page-content__blue-stripe blue-bg p-rel">
+			<div class="container p-rel">
+				<div class="reasons__title visible-lg">
+					<p class="reasons__title__big-number ff-sub text-white dib vab mr30 ">6</p>
+					<div class="reasons__title__content dib tar fx-column text-white  ">
+						<span class="ff-sub fz99 vab">причин</span>
+						<span class="ff-sub fz60 lh46 vab">взять</span>
+						<span class="ff-sub fz60 lh46 vab">автозайм</span>
+					</div>
+				</div>
+				<div class="first-screen__form-wrapper tac">
+					<div class="first-screen__form dib p-rel">
+						<div class="first-screen__form__inner">
+							<div class="first-screen__form__header tac">
+								<p class="fz20 lh24 text-white fz-mobile ff-base-bold">
+									Введите данные и узнайте моментально, какую сумму
+									Вы можете получить!
+								</p>
+							</div>
+							<form class="first-screen__form__content tal">
+								{% include "widgets/slider-range.twig" %}
+								<div class="first-screen__form__content__input-list mb20">
+									{% set advList = [
+									{
+									placeholder: "Модель автомобиля",
+									class:""
+									},
+									{
+									placeholder: "Марка автомобиля",
+									class:""
+									},
+									{
+									placeholder: "Год выпуска",
+									class:""
+									},
+									{
+									placeholder: "Ваше имя",
+									class:""
+									},
+									{
+									placeholder: "Номер телефона",
+									class:"inputmask-phone"
+									},
+									] %}
+									{% for item in advList %}
+										<div class="grid-wrapper">
+											<div class="input-wrapper fluid">
+												<input type="text" placeholder="{{ item.placeholder }}"
+															 class="{{ item.class }}">
+											</div>
+										</div>
+									{% endfor %}
+								</div>
+								<div class="tac">
+									<a href="#" class="btn btn-green fz20">Рассчитать</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="page-content__block advantages-slider">
+			<div class="container">
+				<div class="page-content__section-title text-black tac hidden-lg mb50">
+					6 причин взять автозайм
+				</div>
+				<div class="advantages-slider-list owl-carousel mb35 tac">
+					{% set advSliderList = [
+					{
+					title: "1. Низкая процентная ставка",
+					text: "От 3% – этот невысокий процент обеспечивает вам максимальную возможность справиться с выплатами. Наша цель – не разовая прибыль, а установление взаимовыгодных отношений с наибольшим количеством заемщиков, которые продолжат пользоваться нашими услугами в будущем и станут рекомендовать нас своим друзьям и близким."
+					},
+					{
+					title: "2. Низкая процентная ставка",
+					text: "От 3% – этот невысокий процент обеспечивает вам максимальную возможность справиться с выплатами. Наша цель – не разовая прибыль, а установление взаимовыгодных отношений с наибольшим количеством заемщиков, которые продолжат пользоваться нашими услугами в будущем и станут рекомендовать нас своим друзьям и близким."
+					},
 
-                    {
-                    title: "3. Низкая процентная ставка",
-                    text: "От 3% – этот невысокий процент обеспечивает вам максимальную возможность справиться с выплатами. Наша цель – не разовая прибыль, а установление взаимовыгодных отношений с наибольшим количеством заемщиков, которые продолжат пользоваться нашими услугами в будущем и станут рекомендовать нас своим друзьям и близким."
-                    },
+					{
+					title: "3. Низкая процентная ставка",
+					text: "От 3% – этот невысокий процент обеспечивает вам максимальную возможность справиться с выплатами. Наша цель – не разовая прибыль, а установление взаимовыгодных отношений с наибольшим количеством заемщиков, которые продолжат пользоваться нашими услугами в будущем и станут рекомендовать нас своим друзьям и близким."
+					},
 
-                    {
-                    title: "4. Низкая процентная ставка",
-                    text: "От 3% – этот невысокий процент обеспечивает вам максимальную возможность справиться с выплатами. Наша цель – не разовая прибыль, а установление взаимовыгодных отношений с наибольшим количеством заемщиков, которые продолжат пользоваться нашими услугами в будущем и станут рекомендовать нас своим друзьям и близким."
-                    },
+					{
+					title: "4. Низкая процентная ставка",
+					text: "От 3% – этот невысокий процент обеспечивает вам максимальную возможность справиться с выплатами. Наша цель – не разовая прибыль, а установление взаимовыгодных отношений с наибольшим количеством заемщиков, которые продолжат пользоваться нашими услугами в будущем и станут рекомендовать нас своим друзьям и близким."
+					},
 
-                    {
-                    title: "5. Низкая процентная ставка",
-                    text: "От 3% – этот невысокий процент обеспечивает вам максимальную возможность справиться с выплатами. Наша цель – не разовая прибыль, а установление взаимовыгодных отношений с наибольшим количеством заемщиков, которые продолжат пользоваться нашими услугами в будущем и станут рекомендовать нас своим друзьям и близким."
-                    },
-                    {
-                    title: "6. Низкая процентная ставка",
-                    text: "От 3% – этот невысокий процент обеспечивает вам максимальную возможность справиться с выплатами. Наша цель – не разовая прибыль, а установление взаимовыгодных отношений с наибольшим количеством заемщиков, которые продолжат пользоваться нашими услугами в будущем и станут рекомендовать нас своим друзьям и близким."
-                    },
+					{
+					title: "5. Низкая процентная ставка",
+					text: "От 3% – этот невысокий процент обеспечивает вам максимальную возможность справиться с выплатами. Наша цель – не разовая прибыль, а установление взаимовыгодных отношений с наибольшим количеством заемщиков, которые продолжат пользоваться нашими услугами в будущем и станут рекомендовать нас своим друзьям и близким."
+					},
+					{
+					title: "6. Низкая процентная ставка",
+					text: "От 3% – этот невысокий процент обеспечивает вам максимальную возможность справиться с выплатами. Наша цель – не разовая прибыль, а установление взаимовыгодных отношений с наибольшим количеством заемщиков, которые продолжат пользоваться нашими услугами в будущем и станут рекомендовать нас своим друзьям и близким."
+					},
 
 
-                    ] %}
-                    {% for item in advSliderList %}
-                        <div class="advantages-slider-item">
-                            <h3 class="f-normal lh36 mb20">
-                                <p class="advantages-slider-item__number"></p>{{ item.title }}
-                            </h3>
-                            <p class="text-black fz17 f-normal lh20">
-                                {{ item.text }}
-                            </p>
-                        </div>
-                    {% endfor %}
-                </div>
-                <div class="tac"><a href="#" class="btn dib btn-green">Подробнее</a></div>
-            </div>
-        </section>
+					] %}
+					{% for item in advSliderList %}
+						<div class="advantages-slider-item">
+							<h3 class="f-normal lh36 mb20">
+								<p class="advantages-slider-item__number"></p>{{ item.title }}
+							</h3>
+							<p class="text-black fz17 f-normal lh20">
+								{{ item.text }}
+							</p>
+						</div>
+					{% endfor %}
+				</div>
+				<div class="tac"><a href="#" class="btn dib btn-green">Подробнее</a></div>
+			</div>
+		</section>
 
-        <section class="page-content__block page-content__b-services">
-            <div class="container tac">
-                <div class="page-content__section-title text-white mb50">
-                    Как воспользоваться услугами?
-                </div>
-                <div class="page-content__b-services__icons-list fx-center fx-items-start mb45">
-                    <div class="page-content__b-services__icons-item tac">
-                        <div class="circle-icon-wrapper mb30 ">
-                            <i class="icon-edit "></i>
-                        </div>
-                        <h3 class="services-text text-white f-normal">Оставляете заявку</h3>
-                    </div>
-                    <span class="icon-wrapper"> <i class="arrow-right"></i></span>
-                    <div class="page-content__b-services__icons-item tac">
-                        <div class="circle-icon-wrapper mb30 ">
-                            <i class="icon-search"></i>
-                        </div>
-                        <h3 class="services-text text-white f-normal">Проводим осмотр</h3>
-                    </div>
-                    <span class="icon-wrapper"><i class="arrow-right"></i></span>
-                    <div class="page-content__b-services__icons-item tac">
-                        <div class="circle-icon-wrapper mb30 ">
-                            <i class="icon-wallet ml8"></i>
-                        </div>
-                        <h3 class="services-text text-white f-normal">Получаете деньги</h3>
-                    </div>
-                </div>
-                <a href="#" class="btn blue-btn">Оставить заявку</a>
+		<section class="page-content__block page-content__b-services">
+			<div class="container tac">
+				<div class="page-content__section-title text-white mb50">
+					Как воспользоваться услугами?
+				</div>
+				<div class="page-content__b-services__icons-list fx-center fx-items-start mb45">
+					<div class="page-content__b-services__icons-item tac">
+						<div class="circle-icon-wrapper mb30 ">
+							<i class="icon-edit "></i>
+						</div>
+						<h3 class="services-text text-white f-normal">Оставляете заявку</h3>
+					</div>
+					<span class="icon-wrapper"> <i class="arrow-right"></i></span>
+					<div class="page-content__b-services__icons-item tac">
+						<div class="circle-icon-wrapper mb30 ">
+							<i class="icon-search"></i>
+						</div>
+						<h3 class="services-text text-white f-normal">Проводим осмотр</h3>
+					</div>
+					<span class="icon-wrapper"><i class="arrow-right"></i></span>
+					<div class="page-content__b-services__icons-item tac">
+						<div class="circle-icon-wrapper mb30 ">
+							<i class="icon-wallet ml8"></i>
+						</div>
+						<h3 class="services-text text-white f-normal">Получаете деньги</h3>
+					</div>
+				</div>
+				<a href="#" class="btn blue-btn">Оставить заявку</a>
 
-            </div>
-        </section>
-        <section class="page-content__block page-content__b-demands">
-            <div class="container tac">
-                <div class="page-content__section-title text-blue mb45">
-                    Что требуется для оформления займа?
-                </div>
-                <div class="fx-center fx-baseline-lg fx-column-sm fx-center-sm mb35 ">
-                    <div class="square-wrapper-outer">
-                        <div class="square-wrapper fx-center mr20 mb15">
-                            <div class="img-wrapper">
-                                <img src="img/pasport.png" alt="" class="img-responsive">
-                            </div>
-                        </div>
-                        <h5 class="text-black lh24 f-normal">Оригинал технического паспорта авто</h5>
-                    </div>
-                    <div class="square-wrapper-outer">
-                        <div class="square-wrapper fx-center  mb15">
-                            <div class="img-wrapper">
-                                <img src="img/certificate.png" alt="" class="img-responsive">
-                            </div>
-                        </div>
-                        <h5 class="text-black lh24 f-normal">Оригинал технического паспорта авто</h5>
-                    </div>
-                </div>
-                <a href="#" class="btn blue-btn tac">Выберите сами ставку</a>
-            </div>
-        </section>
-        <section class="page-content__block page-content__b-calculate blue-bg" id="calculate">
-            <div class="container">
-                <div class="page-content__section-title text-white mb45 tac">
-                    Расчет кредита
-                </div>
-                <form class="page-content__b-calculate__form  ">
-                    <div class="page-content__b-calculate__form__inner">
-                        <div class="page-content__b-calculate__form__auto-inform">
-                            <div class="input-wrapper">
-                                <input type="text" class=" " placeholder="Модель автомобиля">
-                            </div>
-                            <div class="input-wrapper">
-                                <input type="text" class=" " placeholder="Марка автомобиля">
-                            </div>
-                            <div class="input-wrapper">
-                                <input type="text" class=" " placeholder="Год выпуска">
-                            </div>
-                        </div>
-                        <div class="page-content__b-calculate__form__main text-white tal">
-                            <div class="page-content__b-calculate__form__main-inner">
-                                <div class="mb25 fx-justify fx-wrap ">
-                                    <div class="input-block fx-justify ">
-                                        <input type="checkbox" name="" id="">
-                                        <span class="checkbox-icon dib"></span>
-                                        <span class="fz15 lh18 f-normal dib text-white">С правом на вождение</span>
-                                    </div>
-                                    <div class="input-block fx-justify ">
-                                        <input type="checkbox" name="" id="">
-                                        <span class="checkbox-icon dib"></span>
-                                        <p class="fz15 lh18 f-normal dib text-white">Без права на вождение</p>
-                                    </div>
-                                </div>
-                                {% include "widgets/slider-range.twig" %}
-                            </div>
+			</div>
+		</section>
+		<section class="page-content__block page-content__b-demands">
+			<div class="container tac">
+				<div class="page-content__section-title text-blue mb45">
+					Что требуется для оформления займа?
+				</div>
+				<div class="fx-center fx-baseline-lg fx-column-sm fx-center-sm mb35 ">
+					<div class="square-wrapper-outer">
+						<div class="square-wrapper fx-center mr20 mb15">
+							<div class="img-wrapper">
+								<img src="img/pasport.png" alt="" class="img-responsive">
+							</div>
+						</div>
+						<h5 class="text-black lh24 f-normal">Оригинал технического паспорта авто</h5>
+					</div>
+					<div class="square-wrapper-outer">
+						<div class="square-wrapper fx-center  mb15">
+							<div class="img-wrapper">
+								<img src="img/certificate.png" alt="" class="img-responsive">
+							</div>
+						</div>
+						<h5 class="text-black lh24 f-normal">Оригинал технического паспорта авто</h5>
+					</div>
+				</div>
+				<a href="#" class="btn blue-btn tac">Выберите сами ставку</a>
+			</div>
+		</section>
+		<section class="page-content__block page-content__b-calculate blue-bg" id="calculate">
+			<div class="container">
+				<div class="page-content__section-title text-white mb45 tac">
+					Расчет кредита
+				</div>
+				<form class="page-content__b-calculate__form  ">
+					<div class="page-content__b-calculate__form__inner">
+						<div class="page-content__b-calculate__form__auto-inform">
+							<div class="input-wrapper">
+								<input type="text" class=" " placeholder="Модель автомобиля">
+							</div>
+							<div class="input-wrapper">
+								<input type="text" class=" " placeholder="Марка автомобиля">
+							</div>
+							<div class="input-wrapper">
+								<input type="text" class=" " placeholder="Год выпуска">
+							</div>
+						</div>
+						<div class="page-content__b-calculate__form__main text-white tal">
+							<div class="page-content__b-calculate__form__main-inner">
+								<div class="mb25 fx-justify fx-wrap ">
+									<div class="input-block fx-justify ">
+										<input type="checkbox" name="" id="">
+										<span class="checkbox-icon dib"></span>
+										<span class="fz15 lh18 f-normal dib text-white">С правом на вождение</span>
+									</div>
+									<div class="input-block fx-justify ">
+										<input type="checkbox" name="" id="">
+										<span class="checkbox-icon dib"></span>
+										<p class="fz15 lh18 f-normal dib text-white">Без права на вождение</p>
+									</div>
+								</div>
+								{% include "widgets/slider-range.twig" %}
+							</div>
 
-                        </div>
-                        <div class="page-content__b-calculate__form__contact-inform">
-                            <div class="page-content__b-calculate__form__contact-inform__inner">
-                                <h5 class="text-white lh24 mb15 tac f-normal">
-                                    Рассчитать лучшие условия
-                                    кредитования для Вас
-                                </h5>
-                                <div class="input-wrapper mb10">
-                                    <input type="text" class="fluid " placeholder="Ваше имя">
-                                </div>
-                                <div class="input-wrapper">
-                                    <input type="text" class="fluid inputmask-phone " placeholder="Номер телефона">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tac">
-                        <button href="#" class="btn dib btn-green">Рассчитать</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-        <section class="page-content__block page-content__b-about-us" id="about-us">
-            <div class="container tac">
-                <div class="page-content__section-title text-green mb30">
-                    О нас
-                </div>
-                <div class="input-wrapper mb35">
-                    <img class="fluid" src="http://placehold.it/1170x250" alt="">
-                </div>
-                <p class="fz17 lh20 f-light tal">
-                    От 3% – этот невысокий процент обеспечивает вам максимальную возможность справиться с выплатами.
-                    Наша цель – не разовая прибыль, а установление взаимовыгодных отношений с наибольшим количеством
-                    заемщиков, которые продолжат пользоваться нашими услугами в будущем и станут рекомендовать нас своим
-                    друзьям и близким.
-                </p>
-            </div>
-        </section>
+						</div>
+						<div class="page-content__b-calculate__form__contact-inform">
+							<div class="page-content__b-calculate__form__contact-inform__inner">
+								<h5 class="text-white lh24 mb15 tac f-normal">
+									Рассчитать лучшие условия
+									кредитования для Вас
+								</h5>
+								<div class="input-wrapper mb10">
+									<input type="text" class="fluid " placeholder="Ваше имя">
+								</div>
+								<div class="input-wrapper">
+									<input type="text" class="fluid inputmask-phone " placeholder="Номер телефона">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tac">
+						<button href="#" class="btn dib btn-green">Рассчитать</button>
+					</div>
+				</form>
+			</div>
+		</section>
+		<section class="page-content__block page-content__b-about-us" id="about-us">
+			<div class="container tac">
+				<div class="page-content__section-title text-green mb30">
+					О нас
+				</div>
+				<div class="input-wrapper mb35">
+					<img class="fluid" src="http://placehold.it/1170x250" alt="">
+				</div>
+				<p class="fz17 lh20 f-light tal">
+					От 3% – этот невысокий процент обеспечивает вам максимальную возможность справиться с выплатами.
+					Наша цель – не разовая прибыль, а установление взаимовыгодных отношений с наибольшим количеством
+					заемщиков, которые продолжат пользоваться нашими услугами в будущем и станут рекомендовать нас своим
+					друзьям и близким.
+				</p>
+			</div>
+		</section>
 
-        <section class="page-content__block page-content__b-advantages-info">
-            <div class="container tal">
-                {% set advInfoList = [
-                {
-                icon: "icon-star",
-                text: "Оценку осуществляют специалисты, ежедневно прослеживающие конъюнктуру рынка, которые точно определят максимально возможную цену машины."
-                },
-                {
-                icon: "icon-stopwatch",
-                text: "Мы ценим ваше время, а потому предлагаем заложить машину в ломбард всего за полчаса без ожидания, очередей, бумажной волокиты и длительных проверок."
-                },
-                {
-                icon: "icon-thumbs-up",
-                text: "Бесплатное страхование. Страховку на весь срок выдачи денег мы оформляем в надежной страховой компании Nomad Insurance."
-                },
-                {
-                icon: "icon-shield ml5",
-                text: "Гарантия сохранности автомобиля. Закрытый евро паркинг компании оснащены камерами видеонаблюдения с датчиками движения. Дополнительно, работает вооруженная служба безопасности. Ваш автомобиль будет находиться под надежной защитой."
-                },
-                {
-                icon: "icon-warehouse",
-                text: "Регистрация заложенного имущества в органах ГАИ по месту регистрации авто осуществляется за счет компании."
-                },
+		<section class="page-content__block page-content__b-advantages-info">
+			<div class="container tal">
+				{% set advInfoList = [
+				{
+				icon: "icon-star",
+				text: "Оценку осуществляют специалисты, ежедневно прослеживающие конъюнктуру рынка, которые точно определят максимально возможную цену машины."
+				},
+				{
+				icon: "icon-stopwatch",
+				text: "Мы ценим ваше время, а потому предлагаем заложить машину в ломбард всего за полчаса без ожидания, очередей, бумажной волокиты и длительных проверок."
+				},
+				{
+				icon: "icon-thumbs-up",
+				text: "Бесплатное страхование. Страховку на весь срок выдачи денег мы оформляем в надежной страховой компании Nomad Insurance."
+				},
+				{
+				icon: "icon-shield ml5",
+				text: "Гарантия сохранности автомобиля. Закрытый евро паркинг компании оснащены камерами видеонаблюдения с датчиками движения. Дополнительно, работает вооруженная служба безопасности. Ваш автомобиль будет находиться под надежной защитой."
+				},
+				{
+				icon: "icon-warehouse",
+				text: "Регистрация заложенного имущества в органах ГАИ по месту регистрации авто осуществляется за счет компании."
+				},
 
-                ] %}
-                {% for item in advInfoList %}
-                    <div class="page-content__b-advantages-info-item p-rel mb35">
-                        <div class="icon-wrapper fx-start fx-items-end">
-                            <i class="{{ item.icon }} dib"></i>
-                        </div>
-                        <p class="text-white f-normal fz20 fz-tablet-15 lh24 dib">
-                            {{ item.text }}
-                        </p>
-                    </div>
-                {% endfor %}
-            </div>
-        </section>
+				] %}
+				{% for item in advInfoList %}
+					<div class="page-content__b-advantages-info-item p-rel mb35">
+						<div class="icon-wrapper fx-start fx-items-end">
+							<i class="{{ item.icon }} dib"></i>
+						</div>
+						<p class="text-white f-normal fz20 fz-tablet-15 lh24 dib">
+							{{ item.text }}
+						</p>
+					</div>
+				{% endfor %}
+			</div>
+		</section>
 
-        <section class="page-content__block page-content__b-advantages mb110">
-            <div class="container">
-                <div class="page-content__section-title text-green tac mb45">
-                    Наши преимущества
-                </div>
-                <div class="b-advantages__adv-list">
-                    {% set advList = [
-                    {
-                    icon: "icon-star",
-                    info: "Оценка авто бесплатно"
-                    },
-                    {
-                    icon: "icon-thumbs-up",
-                    info: "До 80% от стоимости авто"
-                    },
-                    {
-                    icon: "icon-lock-open-alt-1",
-                    info: "Охраняемая парковка"
-                    },
-                    {
-                    icon: "icon-doc",
-                    info: "Минимум документов"
-                    },
-                    {
-                    icon: "icon-stopwatch",
-                    info: "Получите деньги за 40 минут"
-                    },
-                    {
-                    icon: "icon-percent",
-                    info: "Низкие процентные ставки"
-                    },
-                    {
-                    icon: "icon-block",
-                    info: "Никаких мелких шрифтов в договоре"
-                    },
+		<section class="page-content__block page-content__b-advantages mb110">
+			<div class="container">
+				<div class="page-content__section-title text-green tac mb45">
+					Наши преимущества
+				</div>
+				<div class="b-advantages__adv-list">
+					{% set advList = [
+					{
+					icon: "icon-star",
+					info: "Оценка авто бесплатно"
+					},
+					{
+					icon: "icon-thumbs-up",
+					info: "До 80% от стоимости авто"
+					},
+					{
+					icon: "icon-lock-open-alt-1",
+					info: "Охраняемая парковка"
+					},
+					{
+					icon: "icon-doc",
+					info: "Минимум документов"
+					},
+					{
+					icon: "icon-stopwatch",
+					info: "Получите деньги за 40 минут"
+					},
+					{
+					icon: "icon-percent",
+					info: "Низкие процентные ставки"
+					},
+					{
+					icon: "icon-block",
+					info: "Никаких мелких шрифтов в договоре"
+					},
 
-                    ] %}
-                    {% for item in advList %}
-                        <div class="b-advantages__adv-list-item-wrapper">
-                            <div class="b-advantages__adv-list-item">
-                                <div class="icon-wrapper mb15">
-                                    <i class="{{ item.icon }}"></i>
-                                </div>
-                                <div class="b-advantages__adv-list-item-text
+					] %}
+					{% for item in advList %}
+						<div class="b-advantages__adv-list-item-wrapper">
+							<div class="b-advantages__adv-list-item">
+								<div class="icon-wrapper mb15">
+									<i class="{{ item.icon }}"></i>
+								</div>
+								<div class="b-advantages__adv-list-item-text
                                                       text-black fz17 f-normal lh20">
-                                    {{ item.info }}
-                                </div>
-                            </div>
-                        </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </section>
+									{{ item.info }}
+								</div>
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</section>
 
 
-        <section class="page-content__block page-content__b-application p-rel mb100">
-            <div class="container">
-                <div class="b-application-form-wrapper">
-                    <div class="shell-w45">
-                        {% include "elements/input-form.twig" with
-                        {"form_title" : "Успейте получить специальные&nbsp;условия",
-                        "form_title_label" : "Заполните форму заявки и специалист компании свяжется с Вами!",
-                        "form_btn_text" : "Оставить заявку",
-                        "form_btn_color": "blue-btn"} %}
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="page-content__block page-content__b-reviews" id="reviews">
-            <div class="container">
-                <div class="page-content__section-title text-blue tac mb25">
-                    Отзывы
-                </div>
-                <div class="page-content__b-reviews__slider-list owl-carousel">
-                    {% for i in 1..4 %}
-                        <div class="page-content__b-reviews__slider-item tac">
-                            <div class="circle-icon-wrapper mb25">
-                                <span class="icon-user-female "></span>
-                            </div>
-                            <p class="text-blue fz20 f-normal lh24 mb10">Елена</p>
-                            <p class="fz12 f-normal lh14 mb10">
-                                13.11.2016
-                            </p>
-                            <p class="fz15 text-black lh18">
-                                Присоединяюсь к обсуждению и говорю ,что ни минуты не пожалел о том, что обратился в эту
-                                компанию за фин помощью. Все сделали быстро, четко, относительно других похожих компаний
-                                проценты меньше!!! В общем, мне понравилось и если понадобится, я обращусь к ним еще не
-                                один раз))
-                            </p>
-                        </div>
-                        <div class="page-content__b-reviews__slider-item tac">
-                            <div class="circle-icon-wrapper mb25">
-                                <span class="icon-user-male"></span>
-                            </div>
-                            <p class="text-blue fz20 f-normal lh24 mb10">Елена</p>
-                            <p class="fz12 f-normal lh14 mb10">
-                                13.11.2016
-                            </p>
-                            <p class="fz15 text-black lh18">
-                                Присоединяюсь к обсуждению и говорю ,что ни минуты не пожалел о том, что обратился в эту
-                                компанию за фин помощью. Все сделали быстро, четко, относительно других похожих компаний
-                                проценты меньше!!! В общем, мне понравилось и если понадобится, я обращусь к ним еще не
-                                один раз))
-                            </p>
-                        </div>
-                    {% endfor %}
+		<section class="page-content__block page-content__b-application p-rel mb100">
+			<div class="container">
+				<div class="b-application-form-wrapper">
+					<div class="shell-w45">
+						{% include "elements/input-form.twig" with
+						{"form_title" : "Успейте получить специальные&nbsp;условия",
+						"form_title_label" : "Заполните форму заявки и специалист компании свяжется с Вами!",
+						"form_btn_text" : "Оставить заявку",
+						"form_btn_color": "blue-btn"} %}
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="page-content__block page-content__b-reviews" id="reviews">
+			<div class="container">
+				<div class="page-content__section-title text-blue tac mb25">
+					Отзывы
+				</div>
+				<div class="page-content__b-reviews__slider-list owl-carousel">
+					{% for i in 1..4 %}
+						<div class="page-content__b-reviews__slider-item tac">
+							<div class="circle-icon-wrapper mb25">
+								<span class="icon-user-female "></span>
+							</div>
+							<p class="text-blue fz20 f-normal lh24 mb10">Елена</p>
+							<p class="fz12 f-normal lh14 mb10">
+								13.11.2016
+							</p>
+							<p class="fz15 text-black lh18">
+								Присоединяюсь к обсуждению и говорю ,что ни минуты не пожалел о том, что обратился в эту
+								компанию за фин помощью. Все сделали быстро, четко, относительно других похожих компаний
+								проценты меньше!!! В общем, мне понравилось и если понадобится, я обращусь к ним еще не
+								один раз))
+							</p>
+						</div>
+						<div class="page-content__b-reviews__slider-item tac">
+							<div class="circle-icon-wrapper mb25">
+								<span class="icon-user-male"></span>
+							</div>
+							<p class="text-blue fz20 f-normal lh24 mb10">Елена</p>
+							<p class="fz12 f-normal lh14 mb10">
+								13.11.2016
+							</p>
+							<p class="fz15 text-black lh18">
+								Присоединяюсь к обсуждению и говорю ,что ни минуты не пожалел о том, что обратился в эту
+								компанию за фин помощью. Все сделали быстро, четко, относительно других похожих компаний
+								проценты меньше!!! В общем, мне понравилось и если понадобится, я обращусь к ним еще не
+								один раз))
+							</p>
+						</div>
+					{% endfor %}
 
-                </div>
-            </div>
-        </section>
+				</div>
+			</div>
+		</section>
 
-        <section class="page-content__b-get-consultation dark-grey-bg clearfix" id="car-loan">
-            <div class="container p-rel ">
-                <div class="no-gutter page-content__b-get-consultation__form-shell ">
-                    <div class="col-md-5 col-xs-12 page-content__b-get-consultation__form-wrapper">
-                        <div class=" grey-bg page-content__b-get-consultation__form tac">
-                            {% include "elements/input-form.twig" with
-                            {"form_title" : "Необходимо финансирование? Нет денег на реализацию своих идей?",
-                            "form_title_label" : "Оставьте заявку, и мы поможем вам!",
-                            "form_btn_text" : "Получить консультацию",
-                            "form_btn_color": "blue-btn"} %}
-                        </div>
-                    </div>
-                    <div class="page-content__b-get-consultation__photo">
-                    </div>
-                </div>
-            </div>
-        </section>
+		<section class="page-content__b-get-consultation dark-grey-bg clearfix" id="car-loan">
+			<div class="container p-rel ">
+				<div class="no-gutter page-content__b-get-consultation__form-shell ">
+					<div class="col-md-5 col-xs-12 page-content__b-get-consultation__form-wrapper">
+						<div class=" grey-bg page-content__b-get-consultation__form tac">
+							{% include "elements/input-form.twig" with
+							{"form_title" : "Необходимо финансирование? Нет денег на реализацию своих идей?",
+							"form_title_label" : "Оставьте заявку, и мы поможем вам!",
+							"form_btn_text" : "Получить консультацию",
+							"form_btn_color": "blue-btn"} %}
+						</div>
+					</div>
+					<div class="page-content__b-get-consultation__photo">
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <section class="page-content__block page-content__b-questions">
-            <div class="container">
-                <div class="page-content__section-title text-blue tac mb45">
-                    Часто задаваемые вопросы
-                </div>
+		<section class="page-content__block page-content__b-questions">
+			<div class="container">
+				<div class="page-content__section-title text-blue tac mb45">
+					Часто задаваемые вопросы
+				</div>
 
 
-                <div class="panel-group page-content__b-questions__accordeon" id="accordion">
-                    {% set accList = [
-                    {
-                    number: "1",
-                    id: "collapseOne",
-                    title: "Автоломбард что же это такое и зачем он нужен?",
-                    text: "У любого человека могут возникнуть финансовые трудности, или просто очень срочно нужны деньги на короткий срок. Услуги автомобильного, в первую очередь, адресованы людям, которым деньги нужны не завтра, а уже сегодня, сейчас и немедленно. Сколько вы готовы отдать за возможность в любой момент получить необходимую Вам сумму денег? Мы сможем помочь с решением данного рода проблем. Ни один банк не выдаст кредит под залог авто так оперативно, как мы. Найти нас в Алматы несложно: таких десятки. Однако тех, которые дадут за Вашу машину адекватную цену совсем немного. "
-                    },
+				<div class="panel-group page-content__b-questions__accordeon" id="accordion">
+					{% set accList = [
+					{
+					number: "1",
+					id: "collapseOne",
+					title: "Автоломбард что же это такое и зачем он нужен?",
+					text: "У любого человека могут возникнуть финансовые трудности, или просто очень срочно нужны деньги на короткий срок. Услуги автомобильного, в первую очередь, адресованы людям, которым деньги нужны не завтра, а уже сегодня, сейчас и немедленно. Сколько вы готовы отдать за возможность в любой момент получить необходимую Вам сумму денег? Мы сможем помочь с решением данного рода проблем. Ни один банк не выдаст кредит под залог авто так оперативно, как мы. Найти нас в Алматы несложно: таких десятки. Однако тех, которые дадут за Вашу машину адекватную цену совсем немного. "
+					},
 
-                    {
-                    number: "2",
-                    id: "collapseTwo",
-                    title: "Хотите сэкономить Ваши деньги и время?",
-                    text: "У любого человека могут возникнуть финансовые трудности, или просто очень срочно нужны деньги на короткий срок. Услуги автомобильного, в первую очередь, адресованы людям, которым деньги нужны не завтра, а уже сегодня, сейчас и немедленно. Сколько вы готовы отдать за возможность в любой момент получить необходимую Вам сумму денег? Мы сможем помочь с решением данного рода проблем. Ни один банк не выдаст кредит под залог авто так оперативно, как мы. Найти нас в Алматы несложно: таких десятки. Однако тех, которые дадут за Вашу машину адекватную цену совсем немного. "
-                    },
-                    {
-                    number: "3",
-                    id: "collapseTree",
-                    title: "Кредит под залог авто",
-                    text: "У любого человека могут возникнуть финансовые трудности, или просто очень срочно нужны деньги на короткий срок. Услуги автомобильного, в первую очередь, адресованы людям, которым деньги нужны не завтра, а уже сегодня, сейчас и немедленно. Сколько вы готовы отдать за возможность в любой момент получить необходимую Вам сумму денег? Мы сможем помочь с решением данного рода проблем. Ни один банк не выдаст кредит под залог авто так оперативно, как мы. Найти нас в Алматы несложно: таких десятки. Однако тех, которые дадут за Вашу машину адекватную цену совсем немного. "
-                    },
-                    {
-                    number: "4",
-                    id: "collapseFour",
-                    title: "Сколько можно получить в кредит под залог автомобиля?",
-                    text: "У любого человека могут возникнуть финансовые трудности, или просто очень срочно нужны деньги на короткий срок. Услуги автомобильного, в первую очередь, адресованы людям, которым деньги нужны не завтра, а уже сегодня, сейчас и немедленно. Сколько вы готовы отдать за возможность в любой момент получить необходимую Вам сумму денег? Мы сможем помочь с решением данного рода проблем. Ни один банк не выдаст кредит под залог авто так оперативно, как мы. Найти нас в Алматы несложно: таких десятки. Однако тех, которые дадут за Вашу машину адекватную цену совсем немного. "
-                    },
+					{
+					number: "2",
+					id: "collapseTwo",
+					title: "Хотите сэкономить Ваши деньги и время?",
+					text: "У любого человека могут возникнуть финансовые трудности, или просто очень срочно нужны деньги на короткий срок. Услуги автомобильного, в первую очередь, адресованы людям, которым деньги нужны не завтра, а уже сегодня, сейчас и немедленно. Сколько вы готовы отдать за возможность в любой момент получить необходимую Вам сумму денег? Мы сможем помочь с решением данного рода проблем. Ни один банк не выдаст кредит под залог авто так оперативно, как мы. Найти нас в Алматы несложно: таких десятки. Однако тех, которые дадут за Вашу машину адекватную цену совсем немного. "
+					},
+					{
+					number: "3",
+					id: "collapseTree",
+					title: "Кредит под залог авто",
+					text: "У любого человека могут возникнуть финансовые трудности, или просто очень срочно нужны деньги на короткий срок. Услуги автомобильного, в первую очередь, адресованы людям, которым деньги нужны не завтра, а уже сегодня, сейчас и немедленно. Сколько вы готовы отдать за возможность в любой момент получить необходимую Вам сумму денег? Мы сможем помочь с решением данного рода проблем. Ни один банк не выдаст кредит под залог авто так оперативно, как мы. Найти нас в Алматы несложно: таких десятки. Однако тех, которые дадут за Вашу машину адекватную цену совсем немного. "
+					},
+					{
+					number: "4",
+					id: "collapseFour",
+					title: "Сколько можно получить в кредит под залог автомобиля?",
+					text: "У любого человека могут возникнуть финансовые трудности, или просто очень срочно нужны деньги на короткий срок. Услуги автомобильного, в первую очередь, адресованы людям, которым деньги нужны не завтра, а уже сегодня, сейчас и немедленно. Сколько вы готовы отдать за возможность в любой момент получить необходимую Вам сумму денег? Мы сможем помочь с решением данного рода проблем. Ни один банк не выдаст кредит под залог авто так оперативно, как мы. Найти нас в Алматы несложно: таких десятки. Однако тех, которые дадут за Вашу машину адекватную цену совсем немного. "
+					},
 
-                    ] %}
-                    {% for item in accList %}
-                    <div class="panel panel-default accordion-group p-rel">
-                        <div class="panel-heading">
-                                <span class="panel-title text-blue fz25 lh-mobile-20 fz-tablet-20 fz-mobile-17 f-normal lh20">
+					] %}
+					{% for item in accList %}
+						<div class="panel panel-default accordion-group p-rel">
+							<div class="panel-heading">
+                                <span
+																		class="panel-title text-blue fz25 lh-mobile-20 fz-tablet-20 fz-mobile-17 f-normal lh20">
                                     <a data-toggle="collapse" class="accordion-toggle" data-parent="#accordion"
-                                       href="#{{ item.id }}">{{ item.title }} </a>
+																			 href="#{{ item.id }}">{{ item.title }} </a>
                                     <span class="accordeon-item-number">{{ item.number }}</span>
                                  </span>
-                        </div>
-                        <div id="{{ item.id }}" class="panel-collapse collapse">
-                            <div class="panel-body  fz15 text-black f-normal lh18">
-                                <p>{{ item.text }}</p>
-                            </div>
-                        </div>
-                    </div>
-                {% endfor %}
-                </div>
-            </div>
-        </section>
+							</div>
+							<div id="{{ item.id }}" class="panel-collapse collapse">
+								<div class="panel-body  fz15 text-black f-normal lh18">
+									<p>{{ item.text }}</p>
+								</div>
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</section>
 
-        <section class="page-content__block page-content__b-shipping">
-            <div class="container ">
-                <div class="page-content__b-shipping__custom-row fx-center p-rel">
-                    <div class="page-content__b-shipping__image visible-md visible-lg hidden-xs">
-                        <div class="img-wrapper fluid">
-                            <img src="../img/taxi.png" alt="" class="fluid">
-                        </div>
-                    </div>
-                    <div class="page-content__b-shipping__form">
-                        {% include "elements/input-form.twig" with
-                        {"form_title" : "Вы оставили <br> машину? Отвезем в <br> любую точку <br> Алматы в подарок!",
-                        "form_title_label" : "Оставьте заявку для получения <br> перевозки",
-                        "form_btn_text" : "Оставить заявку",
-                        "form_btn_color": "yellow-btn"} %}
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <nav class="sliding-panel">
-        <span class="sliding-panel__close"></span>
-        <ul class="sliding-panel-list">
-            <li class="sliding-panel-item">
-                <a class="sliding-panel-link js-scrollScreen" href="#car-loan">Автозайм</a>
-            </li>
-            <li class="sliding-panel-item">
-                <a class="sliding-panel-link js-scrollScreen" href="#calculate">Рассчитать кредит</a>
-            </li>
-            <li class="sliding-panel-item">
-                <a class="sliding-panel-link js-scrollScreen" href="#about-us">О нас</a>
-            </li>
-            <li class="sliding-panel-item">
-                <a class="sliding-panel-link js-scrollScreen" href="#reviews">Отзывы</a>
-            </li>
-            <li class="sliding-panel-item">
-                <a class="sliding-panel-link js-scrollScreen" href="#calculate">Контакты</a>
-            </li>
-        </ul>
-        <div class="fl-grid-a fx-w hidden w300">
-            <div class="work-hours  mt20 mb30">
-                <p>Часы работы <br>
-                    10:00 – 19:00</p>
-            </div>
-            <a href="tel:+74956646607" class=" mb30 tdn header-phone no-hover">
-                +7 (495) 664-66-07
-            </a>
-            <a href="#" class="green_btn-header popup-trigger spc mb30 "><i class=" phone-icon vam mr10"></i>Заказать
-                звонок</a>
-        </div>
+		<section class="page-content__block page-content__b-shipping">
+			<div class="container ">
+				<div class="page-content__b-shipping__custom-row fx-center p-rel">
+					<div class="page-content__b-shipping__image visible-md visible-lg hidden-xs">
+						<div class="img-wrapper fluid">
+							<img src="../img/taxi.png" alt="" class="fluid">
+						</div>
+					</div>
+					<div class="page-content__b-shipping__form">
+						{% include "elements/input-form.twig" with
+						{"form_title" : "Вы оставили <br> машину? Отвезем в <br> любую точку <br> Алматы в подарок!",
+						"form_title_label" : "Оставьте заявку для получения <br> перевозки",
+						"form_btn_text" : "Оставить заявку",
+						"form_btn_color": "yellow-btn"} %}
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<nav class="sliding-panel">
+		<span class="sliding-panel__close"></span>
+		<ul class="sliding-panel-list">
+			<li class="sliding-panel-item">
+				<a class="sliding-panel-link js-scrollScreen" href="#car-loan">Автозайм</a>
+			</li>
+			<li class="sliding-panel-item">
+				<a class="sliding-panel-link js-scrollScreen" href="#calculate">Рассчитать кредит</a>
+			</li>
+			<li class="sliding-panel-item">
+				<a class="sliding-panel-link js-scrollScreen" href="#about-us">О нас</a>
+			</li>
+			<li class="sliding-panel-item">
+				<a class="sliding-panel-link js-scrollScreen" href="#reviews">Отзывы</a>
+			</li>
+			<li class="sliding-panel-item">
+				<a class="sliding-panel-link js-scrollScreen" href="#calculate">Контакты</a>
+			</li>
+		</ul>
+		<div class="fl-grid-a fx-w hidden w300">
+			<div class="work-hours  mt20 mb30">
+				<p>Часы работы <br>
+					10:00 – 19:00</p>
+			</div>
+			<a href="tel:+74956646607" class=" mb30 tdn header-phone no-hover">
+				+7 (495) 664-66-07
+			</a>
+			<a href="#" class="green_btn-header popup-trigger spc mb30 "><i class=" phone-icon vam mr10"></i>Заказать
+				звонок</a>
+		</div>
 
-    </nav>
+	</nav>
 {% endblock %}
