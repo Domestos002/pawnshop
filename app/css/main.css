@@ -8777,7 +8777,7 @@ body {
 
 .first-screen {
   padding-top: 30px;
-  background-image: url('../img/city-bg.png?1479717753');
+  background-image: url('../img/city-bg.png?1480394195');
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
@@ -8785,7 +8785,7 @@ body {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .first-screen {
-    background-image: url('../img/city-bg@2x.png?1479717765');
+    background-image: url('../img/city-bg@2x.png?1480394195');
     background-size: 1920px 695px;
   }
 }
@@ -8868,14 +8868,14 @@ body {
 
 /*-------------------page-content__b-advantages-info------------------ */
 .page-content__b-advantages-info {
-  background-image: url('../img/cars-bg.png?1479717618');
+  background-image: url('../img/cars-bg.png?1480394195');
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .page-content__b-advantages-info {
-    background-image: url('../img/cars-bg@2x.png?1479717628');
+    background-image: url('../img/cars-bg@2x.png?1480394195');
     background-size: 1920px 492px;
   }
 }
@@ -8979,7 +8979,7 @@ body {
 }
 
 .b-application-form-wrapper {
-  background-image: url('../img/ application_bg.png?1479716849');
+  background-image: url('../img/ application_bg.png?1480394195');
   background-size: cover;
   background-position: center center;
   min-height: 400px;
@@ -8996,7 +8996,7 @@ body {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-application-form-wrapper {
-    background-image: url('../img/ application_bg@2x.png?1479802017');
+    background-image: url('../img/ application_bg@2x.png?1480394195');
     background-size: 729px 408px;
   }
 }
@@ -9022,7 +9022,7 @@ body {
   right: 0;
   bottom: 0;
   left: calc(100% - 20px);
-  background-image: url('../img/person.png?1480305045');
+  background-image: url('../img/person.png?1480394195');
   background-size: cover;
   background-position: 0 center;
   height: 100%;
@@ -9035,7 +9035,7 @@ body {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .page-content__b-get-consultation__photo {
-    background-image: url('../img/person@2x.png?1480305056');
+    background-image: url('../img/person@2x.png?1480394195');
     background-size: 915px 455px;
   }
 }

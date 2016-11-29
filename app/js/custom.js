@@ -82,14 +82,22 @@
         $('input.data-inputmask, .inputmask-phone').mask("+7 (999) 999-99-99");
 
 
-        var slider = $(".slider-range");
-        slider.slider();
-        /*var val = slider.slider('getValue');*/
-        /*console.log(val);
-        $("#sum-value").val(val);*/
-        slider.on("slide", function (slideEvt) {
-            $("#sum-value").text(slideEvt.value);
+        $(".slider-range").each(function () {
+            var slider = $(this);
+            slider.slider();
+            // slider.slider({min: 0, max: 10, value: 0, tooltip_position: 'bottom'});
+
+            slider.on("slide", function (slideEvt) {
+                $("#ex6SliderVal").text(slideEvt.value);
+                slider.closest('.slider-block').find('[data-input-value]').val(slideEvt.value);
+            });
+
+            console.log(slider.data('slider'));
+            setTimeout(function () {
+                slider.closest('.slider-block').find('[data-input-value]').val(slider.data('slider').value[0]);
+            }, 500);
         });
+
 
         $(".accordion-toggle").on('click',function(e){
             if ($(this).closest(".accordion-heading").siblings(".accordion-body").hasClass('in')){
@@ -107,14 +115,12 @@
 
         $(document).on("click", '.navbar-toggle', function (e) {
             $('.sliding-panel').addClass('active');
-            $('.site-wrapper').addClass('active');
             $('body').addClass('ovh');
             e.preventDefault();
         });
 
         $(document).on("click", '.sliding-panel__close', function (e) {
             $('.sliding-panel').toggleClass('active');
-            $('.site-wrapper').removeClass('active');
             $('body').removeClass('ovh');
             e.preventDefault();
         });
@@ -127,7 +133,6 @@
             if ($(this).hasClass('sliding-panel-link')) {
                 $('body').removeClass('ovh');
                 $('.sliding-panel').removeClass('active');
-                $('.site-wrapper').removeClass('active');
             }
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                 var target = $(this.hash);
