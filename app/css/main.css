@@ -8829,7 +8829,7 @@ body {
 
 .first-screen {
   padding-top: 30px;
-  background-image: url('../img/city-bg.png?1479717753');
+  background-image: url('../img/city-bg.jpg?1480487688');
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
@@ -8837,8 +8837,8 @@ body {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .first-screen {
-    background-image: url('../img/city-bg@2x.png?1479717765');
-    background-size: 1920px 695px;
+    background-image: url('../img/city-bg@2x.jpg?1480487690');
+    background-size: 960px 347.5px;
   }
 }
 .first-screen .container {
@@ -8920,15 +8920,15 @@ body {
 
 /*-------------------page-content__b-advantages-info------------------ */
 .page-content__b-advantages-info {
-  background-image: url('../img/cars-bg.png?1479717618');
+  background-image: url('../img/cars-bg.jpg?1480487804');
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .page-content__b-advantages-info {
-    background-image: url('../img/cars-bg@2x.png?1479717628');
-    background-size: 1920px 492px;
+    background-image: url('../img/cars-bg@2x.jpg?1480487808');
+    background-size: 960px 246px;
   }
 }
 .page-content__b-advantages-info .icon-wrapper {
@@ -9028,7 +9028,8 @@ body {
 }
 
 .b-application-form-wrapper {
-  background-image: url('../img/ application_bg.png?1479716849');
+  box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.4);
+  background-image: url('../img/application_bg.jpg?1480507382');
   background-size: cover;
   background-position: center center;
   min-height: 400px;
@@ -9045,8 +9046,8 @@ body {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-application-form-wrapper {
-    background-image: url('../img/ application_bg@2x.png?1479802017');
-    background-size: 729px 408px;
+    background-image: url('../img/application_bg@2x.jpg?1480507397');
+    background-size: 721px 400px;
   }
 }
 
@@ -9071,7 +9072,7 @@ body {
   right: 0;
   bottom: 0;
   left: calc(100% - 20px);
-  background-image: url('../img/person.png?1480305045');
+  background-image: url('../img/person.jpg?1480487698');
   background-size: cover !important;
   background-repeat: no-repeat;
   background-position: 0 center;
@@ -9085,7 +9086,7 @@ body {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .page-content__b-get-consultation__photo {
-    background-image: url('../img/person@2x.png?1480305056');
+    background-image: url('../img/person@2x.jpg?1480487868');
     background-size: 915px 455px;
   }
 }
@@ -9253,6 +9254,7 @@ body {
   position: relative;
   flex-basis: 200px;
   flex-shrink: 0;
+  padding-bottom: 10px;
 }
 .page-content__b-calculate__form__inner .page-content__b-calculate__form__main .data-input {
   background-color: #fff;
@@ -9999,6 +10001,7 @@ body {
   }
 
   .b-application-form-wrapper {
+    box-shadow: none !important;
     background-image: none;
     background-color: #748187;
   }

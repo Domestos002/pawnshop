@@ -6,7 +6,6 @@
         var hh = header.outerHeight();
         header_placeholder.css({height:hh});
 
-        console.log(hh)
     };
 
 
@@ -128,7 +127,6 @@
             slider.on("slide", function (slideEvt) {
                 slider.closest('.slider-block').find('[data-input-value]').val(slideEvt.value);
             });
-            // console.log(slider.data('slider'));
             setTimeout(function () {
                 slider.closest('.slider-block').find('[data-input-value]').val(slider.data('slider').value[0]);
             }, 500);
