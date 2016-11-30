@@ -1,20 +1,12 @@
 ;(function () {
     var stickyHeader = function () {
-        var header = document.getElementById("page-header");
-        var logo = document.getElementById("logo");
-        if ($(window).scrollTop() > $(logo).outerHeight()) {
-            $(header).addClass('navbar-fixed-top');
-            $("page-header__row").css({"width": "100%"});
-/*
-            $(".page-header__navbar-link").css({"padding": "40px 0 40px 0"});
-*/
-        }
-        else {
-            $(header).removeClass('navbar-fixed-top');
-/*
-            $(".page-header__navbar-link").css({"padding": "10px 0 10px 0"});
-*/
-        }
+        var header = $("#page-header");
+        var header_placeholder = $(".page-header__placeholder");
+
+        var hh = header.outerHeight();
+        header_placeholder.css({height:hh});
+
+        console.log(hh)
     };
 
 
@@ -25,12 +17,7 @@
         dots: true,
         margin: 20,
         responsive: {
-            320: {
-                nav: false,
-                items: 1
-            },
-
-            400: {
+            0: {
                 nav: false,
                 items: 1
             },
@@ -99,12 +86,25 @@
 
     $(document).ready(function () {
 
-        stickyHeader();
-        $(document).scroll(function () {
-            stickyHeader();
+        $(document).on('input', '[data-input-value]', function () {
+            var $this = $(this);
+            var value = $this.val();
+
+            var slider = $this.closest('.slider-block').find('.slider-range');
+
+            slider.slider('setValue', value);
         });
 
-        var doc =  $(document);
+        stickyHeader();
+        var timeout;
+        $(window).resize(function () {
+            clearTimeout(timeout)
+            timeout = setTimeout(function () {
+                stickyHeader();
+            }, 300);
+        });
+
+        var doc = $(document);
         doc.on('click', '.navbar-toggle', function (e) {
             var doc_width = doc.outerWidth();
 
@@ -127,7 +127,7 @@
             slider.on("slide", function (slideEvt) {
                 slider.closest('.slider-block').find('[data-input-value]').val(slideEvt.value);
             });
-            console.log(slider.data('slider'));
+            // console.log(slider.data('slider'));
             setTimeout(function () {
                 slider.closest('.slider-block').find('[data-input-value]').val(slider.data('slider').value[0]);
             }, 500);

@@ -11,7 +11,7 @@
 
 .data-input
     height: 30px
-
+    padding: 0 13px
 
 .fixed
     top: 0
@@ -354,7 +354,7 @@ body
 /*-------------------page-content__b-reviews------------------*/
 
 .page-content__b-reviews__slider-item
-    max-width: 195px
+    //max-width: 195px
     & .circle-icon-wrapper
         width: 90px
         height: 90px
@@ -435,33 +435,34 @@ body
     margin: 0 auto
 
 .page-content__b-questions__accordeon
-    & .accordion-group
+    .accordion-group
         padding-left: 70px
         &:not(:last-child)
             margin-bottom: 35px
-    & .accordion-toggle
+    .accordion-toggle
 
         &.collapsed
-            & .accordeon-item-number
+            .accordeon-item-number
                 background-color: #666
                 +trans()
 
-    & .accordeon-item-number
-        +position(absolute, 0 none none 0)
+    .accordeon-item-number
         margin-right: 25px
         width: 46px
-        display: flex
-        justify-content: center
-        align-items: center
         height: 46px
+        text-align: center
         background-color: $blue
         border-radius: 50%
-        padding: 20px
+        //padding: 20px
         font-weight: 400
         font-family: $font-second
         font-size: 40px
         color: #fff
         line-height: 46px
+        position: absolute
+        top: 50%
+        left: 0
+        +transform(translateY(-50%))
 
 .page-content__b-shipping
     background-color: $green
@@ -747,8 +748,17 @@ body
     & .tooltip-inner
         color: #fff !important
 
+.page-content__b-questions__accordeon
+    .panel-body
+        border: none !important
+
 .page-header
     min-height: 105px
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 1000
     & .navbar-toggle
         //background-color: $color-brand-2
         &:hover
@@ -757,3 +767,14 @@ body
         & .icon-bar
             background-color: #ccc
 
+.last-child-mb0
+    & > *:last-child
+        margin-bottom: 0
+
+.page-content__b-calculate__form
+    .data-input
+        height: 20px
+        box-sizing: content-box
+        width: 140px
+        max-width: 50%
+        padding: 8px 13px

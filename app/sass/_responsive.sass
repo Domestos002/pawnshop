@@ -16,9 +16,6 @@
     .navbar-toggle
         padding-left: 10px
 
-    .page-header__logo
-        padding-bottom: 10px
-
     .navbar
         min-height: initial
 
@@ -207,9 +204,39 @@
     .page-content__b-calculate__form__auto-inform .input-wrapper:not(:last-child)
         margin-bottom: 10px
 
+    .b-application-form-wrapper
+        position: static
+        +transform(none)
+        left: 0
+        top: 0
+        width: auto
+        min-height: 0
+        padding-top: 0
+        padding-bottom: 0
 
-    .page-header__navbar
-        +position(absolute, 10px 0 none none)
+    .mobile-mb0
+        margin-bottom: 0
+
+    .page-content__b-calculate__form__inner .page-content__b-calculate__form__main
+        padding: 0
+
+    .page-header__phone
+        position: fixed
+        bottom: 10px
+        right: 10px
+        z-index: 100
+        background: #fff
+        border-radius: 100%
+        box-shadow: 0 0 4px #fff
+
+    .icon-phone-circle
+        margin-right: 0
+
+    .page-header__logo
+        padding-bottom: 10px
+
+    //.page-header__navbar
+        //+position(absolute, 10px 0 none none)
     h1, h2, h3, h4, h5
         line-height: 1.2em !important
 
@@ -230,10 +257,13 @@
         white-space: nowrap
 
     .page-header__row
-        flex-direction: column
+        //flex-direction: column
         align-items: initial
         justify-content: center
 
+    .page-header__logo-label
+        font-size: 12px
+        white-space: nowrap
 
     .page-header__phone
         margin: auto
@@ -364,6 +394,9 @@
         margin-left: 65px
         margin-right: 65px
 
+    .mobile-fz12
+        font-size: 12px
+
 
 @media (max-width: 580px)
     .first-screen .container
@@ -426,8 +459,7 @@
 
     .sliding-panel
         width: 100%
-        right: 100%
-        left: initial
+        left: -100%
 
     .site-wrapper-content
         &.active
@@ -468,16 +500,17 @@
     h2
         font-size: 26px
     h3
-        font-size: 25px
+        font-size: 20px
     h4
         font-size: 18px
     h5
         font-size: 18px
 
     .page-header__logo__inner
-        font-size: 7vw !important
+        font-size: 24px
+        margin-bottom: 0
         h1
-            font-size: 7vw !important
+            font-size: 24px
         & .page-header__logo-label
             font-size: 10px !important
 
@@ -526,10 +559,11 @@
         min-height: 350px
 
     .page-content__section-title, .page-footer__b-title
-        font-size: 30px
+        font-size: 24px
 
     .first-screen__form
         width: 100%
+        max-width: 100%
 
     .page-content__blue-stripe.blue-bg
         background-color: transparent

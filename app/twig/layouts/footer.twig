@@ -46,7 +46,7 @@
             <div class="tac">
                 <div class="icon-statistic db mb20 "></div>
                 <div class="page__footer__socials f">
-                    <a href="#" class="page__footer__socials-item inst">
+                    {#<a href="#" class="page__footer__socials-item inst">
                         <span class="icon-instagram"></span>
                     </a>
                     <a href="#" class="page__footer__socials-item vk">
@@ -60,7 +60,17 @@
                     </a>
                     <a href="#" class="page__footer__socials-item fb">
                         <span class="icon-facebook"></span>
-                    </a>
+                    </a>#}
+                    <script type="text/javascript">(function() {
+                            if (window.pluso)if (typeof window.pluso.start == "function") return;
+                            if (window.ifpluso==undefined) { window.ifpluso = 1;
+                                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                                s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+                                s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+                                var h=d[g]('body')[0];
+                                h.appendChild(s);
+                            }})();</script>
+                    <div class="pluso" data-background="#ebebeb" data-options="medium,square,line,horizontal,counter,theme=04" data-services="vkontakte,odnoklassniki,facebook,twitter"></div>
                 </div>
             </div>
         </div>
