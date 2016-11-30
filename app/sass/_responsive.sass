@@ -34,14 +34,11 @@
         width: 300px
         padding: 6px 12px
 
-
     .page-content__b-demands
         & .square-wrapper
             border: none
             width: initial
             height: initial
-
-
 
     .fx-baseline-lg
         display: flex
@@ -201,6 +198,10 @@
 
 
 @media (max-width: $screen-sm - 1px)
+    .fx-tablet-justify
+        display: flex
+        justify-content: space-between
+
     .page-content__b-calculate__form__auto-inform .input-wrapper:not(:last-child)
         margin-bottom: 10px
 
@@ -250,7 +251,7 @@
         margin-right: 0
 
     .page-header__row__inner
-        width: 100%
+        width: 44px
 
 
     .page-header__phone-number
@@ -259,7 +260,6 @@
     .page-header__row
         //flex-direction: column
         align-items: initial
-        justify-content: center
 
     .page-header__logo-label
         font-size: 12px
@@ -415,6 +415,8 @@
 
 
 @media (max-width: $screen-xs - 1px)
+
+
     .b-advantages__adv-list-item-text
         font-size: 14px
 

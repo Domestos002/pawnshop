@@ -8531,10 +8531,6 @@ h1.font-normal, h2.font-normal, h3.font-normal, h4.font-normal, h5.font-normal {
   z-index: 700;
 }
 
-.site-wrapper {
-  min-width: 320px;
-}
-
 .site-wrapper-content {
   transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -8594,6 +8590,7 @@ h1.font-normal, h2.font-normal, h3.font-normal, h4.font-normal, h5.font-normal {
   width: auto;
   max-width: 1205px !important;
   padding: 0 20px !important;
+  min-width: 320px !important;
 }
 
 * {
@@ -8832,7 +8829,7 @@ body {
 
 .first-screen {
   padding-top: 30px;
-  background-image: url('../img/city-bg.png?1480394195');
+  background-image: url('../img/city-bg.png?1479717753');
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
@@ -8840,7 +8837,7 @@ body {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .first-screen {
-    background-image: url('../img/city-bg@2x.png?1480394195');
+    background-image: url('../img/city-bg@2x.png?1479717765');
     background-size: 1920px 695px;
   }
 }
@@ -8923,14 +8920,14 @@ body {
 
 /*-------------------page-content__b-advantages-info------------------ */
 .page-content__b-advantages-info {
-  background-image: url('../img/cars-bg.png?1480394195');
+  background-image: url('../img/cars-bg.png?1479717618');
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .page-content__b-advantages-info {
-    background-image: url('../img/cars-bg@2x.png?1480394195');
+    background-image: url('../img/cars-bg@2x.png?1479717628');
     background-size: 1920px 492px;
   }
 }
@@ -9031,7 +9028,7 @@ body {
 }
 
 .b-application-form-wrapper {
-  background-image: url('../img/ application_bg.png?1480394195');
+  background-image: url('../img/ application_bg.png?1479716849');
   background-size: cover;
   background-position: center center;
   min-height: 400px;
@@ -9048,7 +9045,7 @@ body {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-application-form-wrapper {
-    background-image: url('../img/ application_bg@2x.png?1480394195');
+    background-image: url('../img/ application_bg@2x.png?1479802017');
     background-size: 729px 408px;
   }
 }
@@ -9074,7 +9071,7 @@ body {
   right: 0;
   bottom: 0;
   left: calc(100% - 20px);
-  background-image: url('../img/person.png?1480394195');
+  background-image: url('../img/person.png?1480305045');
   background-size: cover !important;
   background-repeat: no-repeat;
   background-position: 0 center;
@@ -9088,7 +9085,7 @@ body {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .page-content__b-get-consultation__photo {
-    background-image: url('../img/person@2x.png?1480394195');
+    background-image: url('../img/person@2x.png?1480305056');
     background-size: 915px 455px;
   }
 }
@@ -9870,6 +9867,11 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .fx-tablet-justify {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .page-content__b-calculate__form__auto-inform .input-wrapper:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -9929,7 +9931,7 @@ body {
   }
 
   .page-header__row__inner {
-    width: 100%;
+    width: 44px;
   }
 
   .page-header__phone-number {
@@ -9938,7 +9940,6 @@ body {
 
   .page-header__row {
     align-items: initial;
-    justify-content: center;
   }
 
   .page-header__logo-label {
