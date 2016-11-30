@@ -39,6 +39,9 @@ h1, h2, h3, h4, h5
         margin: 0
 
 .accordion-group.panel
+    -webkit-box-shadow: none
+    -moz-box-shadow: none
+    box-shadow: none
     background-color: transparent
     border: none
     & .panel-title
@@ -366,8 +369,9 @@ h1, h2, h3, h4, h5
 //__________________________sliding-panel_______________________________
 .sliding-panel__close
     position: absolute
+    z-index: 400
     top: 20px
-    right: 0px
+    right: 0
     height: 30px
     width:  30px
     padding: 10px 35px
@@ -400,7 +404,6 @@ h1, h2, h3, h4, h5
     overflow: auto
     width: 300px
     position: fixed
-
     top: 0
     height: 100%
     background-color: rgba(255,255,255,0.95)
@@ -411,6 +414,10 @@ h1, h2, h3, h4, h5
         //& .overlay
             display: block !important
             +trans()
+
+.sliding-panel-list
+    position: fixed
+    top: 0
 
 .sliding-panel-link:after
     +arr(5, 7, #fff, r)

@@ -17,7 +17,7 @@
     top: 0
     z-index: 700
 
-.site-wrapper
+.site-wrapper-content
     +trans()
     &.active
         +transform(translateX(300px))
@@ -36,6 +36,10 @@
     width: 100%
     height: 100%
     background: rgba(0 ,0 ,0 ,0.8)
+
+.slider-block
+    .slider-range-label
+        width: 145px !important
 
 *:not(.tdu)
     text-decoration: none !important
@@ -397,7 +401,8 @@ body
 .page-content__b-get-consultation__photo
     +position(absolute, 0 0 0 calc(100% - 20px))
     +retina-bg("person.png", "person@2x.png")
-    background-size: cover
+    background-size: cover !important
+    background-repeat: no-repeat
     background-position: 0 center
     height: 100%
     width: calc(100% - 41.66667%)
@@ -523,9 +528,16 @@ body
     & .page-content__b-calculate__form__main
         +make-md-column(5, 40px)
         & .input-block
+            z-index: 100
             position: relative
             flex-basis: 200px
             flex-shrink: 0
+
+        & .data-input
+            background-color: #fff
+            position: static !important
+            opacity: 1
+            border-radius: initial
 
         & input
             cursor: pointer

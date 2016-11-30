@@ -5,7 +5,6 @@
 
 @media (max-width: $screen-lg - 1px)
 
-
     .page-header__row__inner
         justify-content: space-between
 
@@ -199,7 +198,14 @@
         & p
             font-size: 2.4vw
 
+@media (max-width: 840px)
+    .b-advantages__adv-list-item-wrapper
+        width: 160px
+
+
 @media (max-width: $screen-sm - 1px)
+    .page-content__b-calculate__form__auto-inform .input-wrapper:not(:last-child)
+        margin-bottom: 10px
 
 
     .page-header__navbar
@@ -358,6 +364,7 @@
         margin-left: 65px
         margin-right: 65px
 
+
 @media (max-width: 580px)
     .first-screen .container
         min-height: 435px
@@ -372,7 +379,42 @@
             margin-bottom: 20px !important
             margin: 0 auto
 
+
+
 @media (max-width: $screen-xs - 1px)
+    .b-advantages__adv-list-item-text
+        font-size: 14px
+
+    .b-application-form-wrapper
+        padding: 20px
+
+    .page-content__b-advantages
+        margin-bottom: 60px
+
+    .b-advantages__adv-list-item-wrapper
+        width: 115px
+
+    .page-content__b-calculate__form__main-inner
+        & .slider-list
+            margin-bottom: 0
+
+    .page-content__b-calculate__form__main-inner__checkbox-list
+        margin-bottom: 0
+
+    .mobile-m-auto
+        margin: auto
+
+    .mb30
+        margin-bottom: 15px
+    .advantages-slider-list
+        & .owl-dots
+            & .owl-dot
+                padding-left: 17px !important
+                padding-right: 17px !important
+
+
+    .page-content__b-shipping__form
+        padding: 0
 
     .page-content__b-services__icons-item .circle-icon-wrapper
         width: 85px
@@ -387,11 +429,9 @@
         right: 100%
         left: initial
 
-    .site-wrapper
-        +trans()
+    .site-wrapper-content
         &.active
             +transform(translateX(100%))
-            +trans()
 
     .page-header__logo
         width: calc(100% - 55px)
@@ -435,9 +475,9 @@
         font-size: 18px
 
     .page-header__logo__inner
-        font-size: 9vw !important
+        font-size: 7vw !important
         h1
-            font-size: 9vw !important
+            font-size: 7vw !important
         & .page-header__logo-label
             font-size: 10px !important
 
@@ -457,8 +497,8 @@
     .fz-mobile-26
         font-size: 26px
 
-    .fz-mobile-7vw
-        font-size: 7vw
+    .fz-mobile-5vw
+        font-size: 5vw
 
     .fz-mobile-17
         font-size: 17px
@@ -515,10 +555,6 @@
 
     .first-screen__form-wrapper
         padding-bottom: 0
-
-@media (max-width: 840px)
-    .b-advantages__adv-list-item-wrapper
-        width: 160px
 
 @media (max-width: 377px)
     .b-advantages__adv-list-item-wrapper
