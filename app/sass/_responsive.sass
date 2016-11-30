@@ -1,9 +1,24 @@
 @import _imports.sass
+@media (max-width: 1230px)
+    .page-content__b-calculate__form__inner .page-content__b-calculate__form__main .input-block:not(:last-child)
+        margin-right: 5px
+    .page-content__b-calculate__form__main-inner__checkbox-list
+        align-items: center
+
 @media (max-width: 1220px)
+    .page-content__b-calculate__form__inner .page-content__b-calculate__form__main .input-block
+        margin-right: 0 !important
+        margin: auto !important
+        margin-bottom: 20px !important
+
+
+@media (max-width: 1125px)
     .b-advantages__adv-list-item-wrapper
         width: 175px
 
 @media (max-width: $screen-lg - 1px)
+    .page-content__b-shipping__form
+        padding: 0
 
     .page-header__row__inner
         justify-content: space-between
@@ -413,9 +428,6 @@
                 padding-right: 17px !important
 
 
-    .page-content__b-shipping__form
-        padding: 0
-
     .page-content__b-services__icons-item .circle-icon-wrapper
         width: 85px
         height: 85px
@@ -426,8 +438,7 @@
 
     .sliding-panel
         width: 100%
-        right: 100%
-        left: initial
+        left: -100%
 
     .site-wrapper-content
         &.active
@@ -518,7 +529,7 @@
         & .input-block
             text-align: center
 
-    .page-content__b-calculate__form__inner
+    //.page-content__b-calculate__form__inner
         & [class*='page-content__b-calculate__form__']
             padding-bottom: 20px
 
@@ -555,6 +566,10 @@
 
     .first-screen__form-wrapper
         padding-bottom: 0
+
+@media (max-width: 320px)
+    .sliding-panel
+        left: -320px
 
 @media (max-width: 377px)
     .b-advantages__adv-list-item-wrapper

@@ -7855,6 +7855,12 @@ h1.font-normal, h2.font-normal, h3.font-normal, h4.font-normal, h5.font-normal {
   -o-transition: all 0.3s ease 0s;
   -ms-transition: all 0.3s ease 0s;
 }
+.sliding-panel__close:hover:before {
+  background-color: #000070;
+}
+.sliding-panel__close:hover:after {
+  background-color: #000070;
+}
 .sliding-panel__close:before {
   display: block;
   background-color: #00008c;
@@ -7863,11 +7869,6 @@ h1.font-normal, h2.font-normal, h3.font-normal, h4.font-normal, h5.font-normal {
   position: absolute;
   top: 50%;
   content: "";
-  transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
   transform: translateY(-50%) rotate(45deg);
   -ms-transform: translateY(-50%) rotate(45deg);
   -webkit-transform: translateY(-50%) rotate(45deg);
@@ -7882,11 +7883,6 @@ h1.font-normal, h2.font-normal, h3.font-normal, h4.font-normal, h5.font-normal {
   position: absolute;
   top: 50%;
   content: "";
-  transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
   transform: translateY(-50%) rotate(-45deg);
   -ms-transform: translateY(-50%) rotate(-45deg);
   -webkit-transform: translateY(-50%) rotate(-45deg);
@@ -8514,6 +8510,7 @@ h1.font-normal, h2.font-normal, h3.font-normal, h4.font-normal, h5.font-normal {
 .page-header {
   background-color: #fff;
   max-width: 100% !important;
+  min-height: 320px;
   margin: 0 auto;
 }
 
@@ -8585,6 +8582,7 @@ h1.font-normal, h2.font-normal, h3.font-normal, h4.font-normal, h5.font-normal {
   width: auto;
   max-width: 1205px !important;
   padding: 0 20px !important;
+  min-width: 320px !important;
 }
 
 * {
@@ -8628,6 +8626,10 @@ a:hover {
   color: #666666;
 }
 
+.hover:hover {
+  color: #404040;
+}
+
 body {
   color: #333333;
   background-color: #fff;
@@ -8647,6 +8649,7 @@ body {
 
 /*-------------------page-content__b-services------------------ */
 .page-header {
+  min-width: 320px !important;
   transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
@@ -8657,6 +8660,13 @@ body {
   padding-right: 18px;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.page-header__phone__inner:hover [class*='icon-'] {
+  color: #207e00;
+}
+.page-header__phone__inner:hover .page-header__phone-number {
+  color: #404040;
 }
 
 .page-header__navbar-link {
@@ -9249,6 +9259,9 @@ body {
   flex-basis: 200px;
   flex-shrink: 0;
 }
+.page-content__b-calculate__form__inner .page-content__b-calculate__form__main .input-block:not(:last-child) {
+  margin-right: 20px;
+}
 .page-content__b-calculate__form__inner .page-content__b-calculate__form__main .data-input {
   background-color: #fff;
   position: static !important;
@@ -9525,13 +9538,13 @@ body {
   min-height: 105px;
 }
 .page-header .navbar-toggle {
-  background-color: #238c00;
+  background-color: #ccc;
 }
 .page-header .navbar-toggle:hover {
-  background-color: #1c7000;
+  background-color: #a3a3a3;
 }
 .page-header .navbar-toggle .icon-bar {
-  background-color: #ccc;
+  background-color: #fff;
 }
 
 /*------------------------------------- */
@@ -9546,12 +9559,32 @@ body {
 /*------------------------------------- */
 /*------------------------------------- */
 /*------------------------------------- */
+@media (max-width: 1230px) {
+  .page-content__b-calculate__form__inner .page-content__b-calculate__form__main .input-block:not(:last-child) {
+    margin-right: 5px;
+  }
+
+  .page-content__b-calculate__form__main-inner__checkbox-list {
+    align-items: center;
+  }
+}
 @media (max-width: 1220px) {
+  .page-content__b-calculate__form__inner .page-content__b-calculate__form__main .input-block {
+    margin-right: 0 !important;
+    margin: auto !important;
+    margin-bottom: 20px !important;
+  }
+}
+@media (max-width: 1125px) {
   .b-advantages__adv-list-item-wrapper {
     width: 175px;
   }
 }
 @media (max-width: 1199px) {
+  .page-content__b-shipping__form {
+    padding: 0;
+  }
+
   .page-header__row__inner {
     justify-content: space-between;
   }
@@ -10125,10 +10158,6 @@ body {
     padding-right: 17px !important;
   }
 
-  .page-content__b-shipping__form {
-    padding: 0;
-  }
-
   .page-content__b-services__icons-item .circle-icon-wrapper {
     width: 85px;
     height: 85px;
@@ -10141,8 +10170,7 @@ body {
 
   .sliding-panel {
     width: 100%;
-    right: 100%;
-    left: initial;
+    left: -100%;
   }
 
   .site-wrapper-content.active {
@@ -10276,10 +10304,6 @@ body {
     text-align: center;
   }
 
-  .page-content__b-calculate__form__inner [class*='page-content__b-calculate__form__'] {
-    padding-bottom: 20px;
-  }
-
   .first-screen .container {
     min-height: 350px;
   }
@@ -10322,6 +10346,11 @@ body {
 
   .first-screen__form-wrapper {
     padding-bottom: 0;
+  }
+}
+@media (max-width: 320px) {
+  .sliding-panel {
+    left: -320px;
   }
 }
 @media (max-width: 377px) {

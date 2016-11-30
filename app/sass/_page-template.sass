@@ -377,6 +377,11 @@ h1, h2, h3, h4, h5
     padding: 10px 35px
     cursor: pointer
     +trans
+    &:hover
+        &:before
+            background-color: $color-brand-1 * 0.8
+        &:after
+            background-color: $color-brand-1 * 0.8
     &:before
         display: block
         background-color: $color-brand-1
@@ -385,7 +390,6 @@ h1, h2, h3, h4, h5
         position: absolute
         top: 50%
         content: ""
-        +transform(translateY(-50%))
         +transform(translateY(-50%) rotate(45deg))
     &:after
         display: block
@@ -395,7 +399,6 @@ h1, h2, h3, h4, h5
         position: absolute
         top: 50%
         content: ""
-        +transform(translateY(-50%))
         +transform(translateY(-50%) rotate(-45deg))
 
 .sliding-panel

@@ -4,9 +4,12 @@
 @import _framework.sass
 @import _icons.sass
 
+
+
 .page-header
     background-color: #fff
     max-width: 100% !important
+    min-height: 320px
     margin: 0 auto
 
 .data-input
@@ -54,6 +57,7 @@
     width: auto
     max-width: 1205px !important
     padding: 0 20px !important
+    min-width: 320px !important
 
 *
     -webkit-box-sizing: border-box
@@ -75,6 +79,10 @@ a
     text-decoration: none
     &:hover
         color: $lightgrey
+        
+.hover
+    &:hover
+        color: $link-hover-color
 
 body
     color: $black
@@ -93,12 +101,19 @@ body
 
 /*-------------------page-content__b-services------------------*/
 .page-header
+    min-width: 320px !important
     +trans()
     .nav > li > a
         padding-right: 18px
         padding-top: 40px
         padding-bottom: 40px
 
+.page-header__phone__inner
+    &:hover
+        [class*='icon-']
+            color: $green * 0.9
+        .page-header__phone-number
+            color: $link-hover-color
 
 
 .page-header__navbar-link
@@ -532,6 +547,8 @@ body
             position: relative
             flex-basis: 200px
             flex-shrink: 0
+            &:not(:last-child)
+                margin-right: 20px //t2
 
         & .data-input
             background-color: #fff
@@ -747,10 +764,10 @@ body
 .page-header
     min-height: 105px
     & .navbar-toggle
-        background-color: $color-brand-2
+        background-color: #ccc
         &:hover
-            background-color: $color-brand-2 * 0.8
+            background-color: #ccc * 0.8
             
         & .icon-bar
-            background-color: #ccc
+            background-color: #fff
 

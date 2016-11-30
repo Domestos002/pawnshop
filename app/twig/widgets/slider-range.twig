@@ -3,9 +3,7 @@
         <label for="slider-range" class="slider-range-label lh18 mb10 fz15  dib f-normal">Сумма займа
             (тенге)</label>
         <div class="input-wrapper dib"><input type="text" data-input-value class="data-input"></div>
-        <input class="slider-range" type="text" data-slider-min="200000"
-               data-slider-max="12000000" data-slider-step="1000"
-               data-slider-value="3" data-slider-tooltip="hide"/>
+        <input class="my-slider-range sum-range " type="text">
         <div class="clearfix">
             <span class="slider-val-min left">200 000</span>
             <span class="slider-val-max right">12 000 000</span>
@@ -14,13 +12,8 @@
     <div class="slider-block">
         <label for="slider-range" class="slider-range-label lh18 mb10 fz15 dib  f-normal">Срок займа</label>
         <div class="input-wrapper dib"><input type="text" data-input-value class="data-input"></div>
-        <input class="slider-range" type="text" data-slider-max="180"
-               data-slider-step="10"
-               data-slider-value="10" data-slider-tooltip="hide"/>
+        <input class="slider-range days-range" type="text">
         <div class="clearfix">
-            {#
-                                                <span  class="slider-val-min left">200000</span>
-            #}
             <span class="slider-val-max right">180 дней</span>
         </div>
     </div>
