@@ -465,8 +465,10 @@
         left: -100%
 
     .site-wrapper-content
+        position: relative
         &.active
-            +transform(translateX(100%))
+            left: 300px
+
 
     .page-header__logo
         width: calc(100% - 55px)

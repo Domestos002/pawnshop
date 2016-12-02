@@ -7912,6 +7912,7 @@ h1.font-normal, h2.font-normal, h3.font-normal, h4.font-normal, h5.font-normal {
 }
 .sliding-panel.active {
   overflow: auto;
+  left: 0;
 }
 
 .sliding-panel-list {
@@ -8829,7 +8830,7 @@ body {
 
 .first-screen {
   padding-top: 30px;
-  background-image: url('../img/city-bg.jpg?1480487688');
+  background-image: url('../img/city-bg.jpg?1480530015');
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
@@ -8837,7 +8838,7 @@ body {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .first-screen {
-    background-image: url('../img/city-bg@2x.jpg?1480487690');
+    background-image: url('../img/city-bg@2x.jpg?1480530015');
     background-size: 960px 347.5px;
   }
 }
@@ -8920,14 +8921,14 @@ body {
 
 /*-------------------page-content__b-advantages-info------------------ */
 .page-content__b-advantages-info {
-  background-image: url('../img/cars-bg.jpg?1480487804');
+  background-image: url('../img/cars-bg.jpg?1480530015');
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .page-content__b-advantages-info {
-    background-image: url('../img/cars-bg@2x.jpg?1480487808');
+    background-image: url('../img/cars-bg@2x.jpg?1480530015');
     background-size: 960px 246px;
   }
 }
@@ -9029,7 +9030,7 @@ body {
 
 .b-application-form-wrapper {
   box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.4);
-  background-image: url('../img/application_bg.jpg?1480507382');
+  background-image: url('../img/application_bg.jpg?1480530015');
   background-size: cover;
   background-position: center center;
   min-height: 400px;
@@ -9046,7 +9047,7 @@ body {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-application-form-wrapper {
-    background-image: url('../img/application_bg@2x.jpg?1480507397');
+    background-image: url('../img/application_bg@2x.jpg?1480530015');
     background-size: 721px 400px;
   }
 }
@@ -9072,7 +9073,7 @@ body {
   right: 0;
   bottom: 0;
   left: calc(100% - 20px);
-  background-image: url('../img/person.jpg?1480487698');
+  background-image: url('../img/person.jpg?1480530015');
   background-size: cover !important;
   background-repeat: no-repeat;
   background-position: 0 center;
@@ -9086,7 +9087,7 @@ body {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .page-content__b-get-consultation__photo {
-    background-image: url('../img/person@2x.jpg?1480487868');
+    background-image: url('../img/person@2x.jpg?1480530015');
     background-size: 915px 455px;
   }
 }
@@ -10212,12 +10213,11 @@ body {
     left: -100%;
   }
 
+  .site-wrapper-content {
+    position: relative;
+  }
   .site-wrapper-content.active {
-    transform: translateX(100%);
-    -ms-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    -moz-transform: translateX(100%);
-    -o-transform: translateX(100%);
+    left: 300px;
   }
 
   .page-header__logo {
