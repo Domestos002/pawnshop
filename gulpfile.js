@@ -115,7 +115,7 @@ gulp.task('bower', function () {
 gulp.task('connect', function () {
     connect.server({
         root: 'app',
-        port: 3000,
+        port: 3006,
         livereload: true
     });
 });

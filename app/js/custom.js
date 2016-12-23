@@ -38,20 +38,6 @@
         }
     });
 
-    function initMap() {
-        //var secheltLoc = new google.maps.LatLng(43.22945504, 76.93169162);
-        var secheltLoc = new google.maps.LatLng(43.22705315, 76.92906439);
-
-
-        map = new google.maps.Map(document.getElementById('page-footer__map'), {
-            center: secheltLoc,
-            scrollwheel: false,
-            zoom: 18
-        });
-
-    }
-
-
     $(function numbered() {
         var i = 1;
         $(".advantages-slider-list").find(".owl-dot").find("span").each(function () {
