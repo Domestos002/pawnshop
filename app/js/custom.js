@@ -147,8 +147,6 @@
             e.preventDefault();
         });
 
-        initMap();
-
     });
     $(function () {
         $('a.js-scrollScreen[href*="#"]:not([href="#"])').click(function () {
